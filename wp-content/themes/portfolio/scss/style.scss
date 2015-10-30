@@ -1,0 +1,42 @@
+/*!
+Theme Name: Portfolio
+Author: JoelDesign
+Author URI: http://joeldesign.ca;
+Description: Thème de portfolio personnel
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import "mixins.scss";
+@import "_flexbox.scss";
+
+$main-color: #CC3030;
+$sec-color: #992424;
+$light-bg: #FAFAFA;
+$dark-bg: #2F2F2F;
+
+@mixin allo{
+
+}
+
+.fH-section{
+	@include breakpoint(small){
+		height: 100vh;
+	}
+}
+
+.flexRow {
+  @include flex();
+
+}
+
+body{
+	background: $light-bg;
+	
+}
+
+section.hero{
+	@extend .fH-section;
+}
+
