@@ -2,9 +2,14 @@
 
 <body <?php body_class(); ?>>
 	
-	<section class="hero">
-		
-	</section>
+	<div id="fullpage">
+		<section class="section"></section>
+		<section class="section"></section>
+		<section class="section"></section>
+		<section class="section"></section>
+		<section class="section"></section>
+
+	</div>
 
 </body>
 
