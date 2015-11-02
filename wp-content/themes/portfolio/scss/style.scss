@@ -1,4 +1,4 @@
-/*!
+/*
 Theme Name: Portfolio
 Author: JoelDesign
 Author URI: http://joeldesign.ca;
@@ -7,36 +7,260 @@ Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
-
+// IMPORTS
 @import "mixins.scss";
 @import "_flexbox.scss";
+@import "fonts.scss";
+
+// VARIABLES
 
 $main-color: #CC3030;
 $sec-color: #992424;
 $light-bg: #FAFAFA;
 $dark-bg: #2F2F2F;
+$light-txt: #FFF;
+$dark-txt: #363636;
 
-@mixin allo{
+/* --------------------------
+Default style
+-------------------------- */
+
+body {
+  background: $light-bg;
+  @include breakpoint(small){
+    overflow: hidden !important;
+  }
+}
+
+h1 {
+  font-family: "Merlo-Light", sans-serif;
+  color: $light-txt;
+  @include font-size(36);
+  text-transform: uppercase;
 
 }
 
-.fH-section{
-	@include breakpoint(small){
-		height: 100vh;
-	}
+h2 {
+  font-family: "Estandar-Bold", sans-serif;
+  color: $light-txt;
+  @include font-size(36);
+  text-transform: uppercase;
+}
+
+a.btn {
+  border: 2px solid;
+  padding: 0.5rem 3rem;
+  font-family: "Estandar-ExtraLight", sans-serif;
+  display: inline-block;
+  text-decoration: none;
+}
+
+a.btnLight {
+  @extend .btn;
+  border-color: $light-txt;
+  color: $light-txt;
+}
+
+/* --------------------------
+Global Style
+-------------------------- */
+
+.fH-section {
+  @include breakpoint(small) {
+    height: 100%;
+  }
+  height: 100vh;
 }
 
 .flexRow {
-  @include flex();
+  height: 100%;
+  @include flexbox;
+  @include justify-content(space-around);
+  text-align: center;
+}
+
+.flexCol {
+  width: 100%;
+  @include flexbox;
+  @include flex-direction(column);
+  @include justify-content(space-around);
+  text-align: center;
+}
+
+.flexResponsiveRow {
+
+  @include flexbox;
+  @include justify-content(space-around);
+  @include flex-direction(column);
+  @include flexbox;
+  text-align: center;
+  @include breakpoint(small) {
+    height: 100%;
+    @include flex-direction(row);
+  }
+}
+
+.flexRow > .flexCol, .flexCol > .flexRow {
+  @include flex(1, 1, auto);
+}
+
+section.hero {
+  @extend .fH-section;
+}
+
+div.vWrapper {
+  @extend .fH-section;
+}
+
+.content-window {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.content-window > div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* --------------------------
+1st section
+-------------------------- */
+
+div#fullpage > section:nth-child(1) {
+
+  div.vWrapper {
+    background: $dark-bg;
+  }
+
+  div.vWrapper > ul, div.vWrapper > ul > li {
+    @extend .fH-section;
+    width: 100%;
+  }
+
+  ul#scene {
+    overflow: hidden;
+
+    .parallaxObject {
+      left: 50%;
+      top: 50%;
+      position: relative;
+      display: inline-block;
+
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+
+    > li:nth-child(1) > div {
+      width: 125%;
+      height: 125%;
+
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+
+      top: 50%;
+      left: 50%;
+      position: relative;
+
+    }
+
+    > li:nth-child(1) div.flexCol:last-of-type {
+      background: $main-color;
+    }
+
+    .logoContainer {
+      width: 160px;
+      height: 160px;
+      border-radius: 50% 0 0 50%;
+      background: $main-color;
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+    }
+
+    .symbol {
+      position: absolute;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  }
 
 }
 
-body{
-	background: $light-bg;
-	
+/* --------------------------
+2nd section
+-------------------------- */
+
+div#fullpage > section:nth-child(2) {
+
+  color: $light-txt;
+
+  div[data-type="background"] {
+    background: url("images/sublime.png") top left no-repeat;
+    @include image-2x("images/sublime@2x.png", cover, null);
+    background-size: cover;
+  }
+
+  .upperSection {
+    @include flex(1, 1, 0);
+  }
+
+  .underSection {
+    @include flex(2, 1, 0);
+    background: $main-color;
+  }
+
+  .myFace {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .underSection > div {
+    position: relative;
+  }
+
+  .underSection > div > div > * {
+    margin: 2.5rem 0;
+  }
+
+  p {
+    font-family: "Estandar-SemiBold", sans-serif;
+    margin: 0.5rem;
+  }
+
+  div.presentation > .flexResponsiveRow {
+    justify-content: center;
+
+    span{
+      @include breakpoint(small){
+        display: initial;
+      }
+
+      display: none;
+
+    }
+
+  }
+
 }
 
-section.hero{
-	@extend .fH-section;
-}
 

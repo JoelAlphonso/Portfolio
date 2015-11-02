@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*!
+/*
 Theme Name: Portfolio
 Author: JoelDesign
 Author URI: http://joeldesign.ca;
@@ -8,23 +8,330 @@ Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
+/*-------------------------------------------------
+FONTS
+-------------------------------------------------*/
+@font-face {
+  font-family: 'Bonbon';
+  src: url("fonts/bonbon_light-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/bonbon_light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/bonbon_light-webfont.woff2") format("woff2"), url("fonts/bonbon_light-webfont.woff") format("woff"), url("fonts/bonbon_light-webfont.ttf") format("opentype"), url("fonts/bonbon_light-webfont.svg") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Estandar-Bold';
+  src: url("fonts/Estandar-Bold-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Estandar-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Estandar-Bold-webfont.woff2") format("woff2"), url("fonts/Estandar-Bold-webfont.woff") format("woff"), url("fonts/Estandar-Bold-webfont.ttf") format("truetype"), url("fonts/Estandar-Bold-webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Estandar-Light';
+  src: url("fonts/Estandar-Light-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Estandar-Light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Estandar-Light-webfont.woff2") format("woff2"), url("fonts/Estandar-Light-webfont.woff") format("woff"), url("fonts/Estandar-Light-webfont.ttf") format("truetype"), url("fonts/Estandar-Light-webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Estandar-ExtraLight';
+  src: url("fonts/Estandar-Extra_Light-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Estandar-Extra_Light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Estandar-Extra_Light-webfont.woff2") format("woff2"), url("fonts/Estandar-Extra_Light-webfont.woff") format("woff"), url("fonts/Estandar-Extra_Light-webfont.ttf") format("truetype"), url("fonts/Estandar-Extra_Light-webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Estandar-Regular';
+  src: url("fonts/Estandar-Regular-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Estandar-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Estandar-Regular-webfont.woff2") format("woff2"), url("fonts/Estandar-Regular-webfont.woff") format("woff"), url("fonts/Estandar-Regular-webfont.ttf") format("truetype"), url("fonts/Estandar-Regular-webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Estandar-SemiBold';
+  src: url("fonts/Estandar-SemiBold-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Estandar-SemiBold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Estandar-SemiBold-webfont.woff2") format("woff2"), url("fonts/Estandar-SemiBold-webfont.woff") format("woff"), url("fonts/Estandar-SemiBold-webfont.ttf") format("truetype"), url("fonts/Estandar-SemiBold-webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Merlo-Light';
+  src: url("fonts/Merlo-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Merlo-Light.eot?#iefix") format("embedded-opentype"), url("fonts/Merlo-Light.woff") format("woff"), url("fonts/Merlo-Light.ttf") format("truetype");
+  /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'Merlo-Medium';
+  src: url("fonts/Merlo-Medium.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Merlo-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/Merlo-Medium.woff") format("woff"), url("fonts/Merlo-Medium.ttf") format("truetype");
+  /* Safari, Android, iOS */
+}
+/* --------------------------
+Default style
+-------------------------- */
+body {
+  background: #fafafa;
+}
 @media (min-width: 37.5em) {
-  .fH-section, section.hero {
-    height: 100vh;
+  body {
+    overflow: hidden !important;
+  }
+}
+
+h1 {
+  font-family: "Merlo-Light", sans-serif;
+  color: white;
+  font-size: 36px;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Estandar-Bold", sans-serif;
+  color: white;
+  font-size: 36px;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+}
+
+a.btn, a.btnLight {
+  border: 2px solid;
+  padding: 0.5rem 3rem;
+  font-family: "Estandar-ExtraLight", sans-serif;
+  display: inline-block;
+  text-decoration: none;
+}
+
+a.btnLight {
+  border-color: white;
+  color: white;
+}
+
+/* --------------------------
+Global Style
+-------------------------- */
+.fH-section, section.hero, div.vWrapper, div#fullpage > section:nth-child(1) div.vWrapper > ul, div#fullpage > section:nth-child(1) div.vWrapper > ul > li {
+  height: 100vh;
+}
+@media (min-width: 37.5em) {
+  .fH-section, section.hero, div.vWrapper, div#fullpage > section:nth-child(1) div.vWrapper > ul, div#fullpage > section:nth-child(1) div.vWrapper > ul > li {
+    height: 100%;
   }
 }
 
 .flexRow {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -moz-box-flex: 1;
-  -moz-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+  text-align: center;
 }
 
-body {
-  background: #fafafa;
+.flexCol {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.flexResponsiveRow {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+@media (min-width: 37.5em) {
+  .flexResponsiveRow {
+    height: 100%;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+.flexRow > .flexCol, .flexCol > .flexRow {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -moz-box-flex: 1;
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.content-window {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.content-window > div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* --------------------------
+1st section
+-------------------------- */
+div#fullpage > section:nth-child(1) div.vWrapper {
+  background: #2f2f2f;
+}
+div#fullpage > section:nth-child(1) div.vWrapper > ul, div#fullpage > section:nth-child(1) div.vWrapper > ul > li {
+  width: 100%;
+}
+div#fullpage > section:nth-child(1) ul#scene {
+  overflow: hidden;
+}
+div#fullpage > section:nth-child(1) ul#scene .parallaxObject {
+  left: 50%;
+  top: 50%;
+  position: relative;
+  display: inline-block;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+div#fullpage > section:nth-child(1) ul#scene > li:nth-child(1) > div {
+  width: 125%;
+  height: 125%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: relative;
+}
+div#fullpage > section:nth-child(1) ul#scene > li:nth-child(1) div.flexCol:last-of-type {
+  background: #cc3030;
+}
+div#fullpage > section:nth-child(1) ul#scene .logoContainer {
+  width: 160px;
+  height: 160px;
+  border-radius: 50% 0 0 50%;
+  background: #cc3030;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+div#fullpage > section:nth-child(1) ul#scene .logo {
+  width: 80px;
+  height: 80px;
+}
+div#fullpage > section:nth-child(1) ul#scene .symbol {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* --------------------------
+2nd section
+-------------------------- */
+div#fullpage > section:nth-child(2) {
+  color: white;
+}
+div#fullpage > section:nth-child(2) div[data-type="background"] {
+  background: url("images/sublime.png") top left no-repeat;
+  background-size: cover;
+}
+@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  div#fullpage > section:nth-child(2) div[data-type="background"] {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url("images/sublime@2x.png");
+    background-size: cover;
+  }
+}
+div#fullpage > section:nth-child(2) .upperSection {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 0;
+  -moz-box-flex: 1;
+  -moz-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+}
+div#fullpage > section:nth-child(2) .underSection {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2 1 0;
+  -moz-box-flex: 2;
+  -moz-flex: 2 1 0;
+  -ms-flex: 2 1 0;
+  flex: 2 1 0;
+  background: #cc3030;
+}
+div#fullpage > section:nth-child(2) .myFace {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+div#fullpage > section:nth-child(2) .underSection > div {
+  position: relative;
+}
+div#fullpage > section:nth-child(2) .underSection > div > div > * {
+  margin: 2.5rem 0;
+}
+div#fullpage > section:nth-child(2) p {
+  font-family: "Estandar-SemiBold", sans-serif;
+  margin: 0.5rem;
+}
+div#fullpage > section:nth-child(2) div.presentation > .flexResponsiveRow {
+  justify-content: center;
+}
+div#fullpage > section:nth-child(2) div.presentation > .flexResponsiveRow span {
+  display: none;
+}
+@media (min-width: 37.5em) {
+  div#fullpage > section:nth-child(2) div.presentation > .flexResponsiveRow span {
+    display: initial;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,11 +4,17 @@
  */
 function portfolio_scripts() {
 
-    wp_enqueue_script('fullpageplugin', get_template_directory_uri() . '/plugins/fullPage.js-master/jquery.fullPage.min.js', array('jquery'));
 
     if(is_front_page()){
 
-        wp_enqueue_script('fullpagejs', get_template_directory_uri() . '/js/fullpage.js', array('jquery'));
+        wp_enqueue_script('fullpageplugin', get_template_directory_uri() . '/plugins/fullPage.js-master/jquery.fullPage.min.js', array('jquery'), false, true);
+
+        wp_enqueue_script('parallax', get_template_directory_uri() . '/plugins/parallax-master/deploy/jquery.parallax.min.js', array('jquery'), false, true);
+
+        wp_enqueue_script('frontpagejs', get_template_directory_uri() . '/js/frontpage.js', array('jquery'), false, true);
+
+        wp_enqueue_script('greensock', "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js");
+
     }
 
     wp_enqueue_script('mainscript', get_template_directory_uri() . '/js/script.js', array('jquery'));
