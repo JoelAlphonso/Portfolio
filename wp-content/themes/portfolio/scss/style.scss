@@ -27,9 +27,9 @@ Default style
 
 body {
   background: $light-bg;
-  @include breakpoint(small){
-    overflow: hidden !important;
-  }
+  overflow: auto;
+  position: relative;
+  height: 100vh;
 }
 
 h1 {
@@ -66,10 +66,8 @@ Global Style
 -------------------------- */
 
 .fH-section {
-  @include breakpoint(small) {
-    height: 100%;
-  }
   height: 100vh;
+  position: relative;
 }
 
 .flexRow {
@@ -104,12 +102,25 @@ Global Style
   @include flex(1, 1, auto);
 }
 
+.flexCenter {
+  @include inline-flex();
+  @include align-items(center);
+  @include justify-content(center);
+}
+
 section.hero {
   @extend .fH-section;
 }
 
 div.vWrapper {
   @extend .fH-section;
+}
+
+div.vWrapperDesktop {
+  @include breakpoint(small){
+    height: 100vh;
+  }
+  position: relative;
 }
 
 .content-window {
@@ -131,6 +142,8 @@ div.vWrapper {
 -------------------------- */
 
 div#fullpage > section:nth-child(1) {
+
+  @extend .fH-section;
 
   div.vWrapper {
     background: $dark-bg;
@@ -218,28 +231,34 @@ div#fullpage > section:nth-child(2) {
     background-size: cover;
   }
 
-  .upperSection {
-    @include flex(1, 1, 0);
-  }
-
-  .underSection {
-    @include flex(2, 1, 0);
-    background: $main-color;
-  }
-
   .myFace {
     position: absolute;
     top: -15px;
     left: 50%;
     transform: translate(-50%, -50%);
+    max-width: 50%;
   }
 
-  .underSection > div {
+  .content {
+    @extend .flexCenter;
+    width: 100%;
+    background: $main-color;
     position: relative;
+    text-align: center;
+    @include breakpoint(small){
+      margin-top: 30vh;
+      height: 70%;
+    }
+    margin-top: 250px;
+    vertical-align: middle;
   }
 
-  .underSection > div > div > * {
-    margin: 2.5rem 0;
+  .content > div.presentation{
+    margin: 200px 0;
+  }
+
+  .content > div.presentation > *{
+    margin: 25px 0;
   }
 
   p {
@@ -250,8 +269,8 @@ div#fullpage > section:nth-child(2) {
   div.presentation > .flexResponsiveRow {
     justify-content: center;
 
-    span{
-      @include breakpoint(small){
+    span {
+      @include breakpoint(small) {
         display: initial;
       }
 

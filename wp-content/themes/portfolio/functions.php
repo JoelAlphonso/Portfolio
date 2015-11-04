@@ -17,6 +17,8 @@ function portfolio_scripts() {
 
     }
 
+    wp_enqueue_script('smoothWheel' , get_template_directory_uri() . '/js/jquery.smoothwheel.js', array('jquery'));
+
     wp_enqueue_script('mainscript', get_template_directory_uri() . '/js/script.js', array('jquery'));
 
 	wp_enqueue_style( 'resetCSS', get_template_directory_uri() . '/css/reset.css' );

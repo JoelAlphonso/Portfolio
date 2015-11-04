@@ -72,11 +72,9 @@ Default style
 -------------------------- */
 body {
   background: #fafafa;
-}
-@media (min-width: 37.5em) {
-  body {
-    overflow: hidden !important;
-  }
+  overflow: auto;
+  position: relative;
+  height: 100vh;
 }
 
 h1 {
@@ -111,13 +109,9 @@ a.btnLight {
 /* --------------------------
 Global Style
 -------------------------- */
-.fH-section, section.hero, div.vWrapper, div#fullpage > section:nth-child(1) div.vWrapper > ul, div#fullpage > section:nth-child(1) div.vWrapper > ul > li {
+.fH-section, section.hero, div.vWrapper, div#fullpage > section:nth-child(1), div#fullpage > section:nth-child(1) div.vWrapper > ul, div#fullpage > section:nth-child(1) div.vWrapper > ul > li {
   height: 100vh;
-}
-@media (min-width: 37.5em) {
-  .fH-section, section.hero, div.vWrapper, div#fullpage > section:nth-child(1) div.vWrapper > ul, div#fullpage > section:nth-child(1) div.vWrapper > ul > li {
-    height: 100%;
-  }
+  position: relative;
 }
 
 .flexRow {
@@ -196,6 +190,33 @@ Global Style
   -moz-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+}
+
+.flexCenter, div#fullpage > section:nth-child(2) .content {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+}
+
+div.vWrapperDesktop {
+  position: relative;
+}
+@media (min-width: 37.5em) {
+  div.vWrapperDesktop {
+    height: 100vh;
+  }
 }
 
 .content-window {
@@ -289,34 +310,32 @@ div#fullpage > section:nth-child(2) div[data-type="background"] {
     background-size: cover;
   }
 }
-div#fullpage > section:nth-child(2) .upperSection {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 0;
-  -moz-box-flex: 1;
-  -moz-flex: 1 1 0;
-  -ms-flex: 1 1 0;
-  flex: 1 1 0;
-}
-div#fullpage > section:nth-child(2) .underSection {
-  -webkit-box-flex: 2;
-  -webkit-flex: 2 1 0;
-  -moz-box-flex: 2;
-  -moz-flex: 2 1 0;
-  -ms-flex: 2 1 0;
-  flex: 2 1 0;
-  background: #cc3030;
-}
 div#fullpage > section:nth-child(2) .myFace {
   position: absolute;
   top: -15px;
   left: 50%;
   transform: translate(-50%, -50%);
+  max-width: 50%;
 }
-div#fullpage > section:nth-child(2) .underSection > div {
+div#fullpage > section:nth-child(2) .content {
+  width: 100%;
+  background: #cc3030;
   position: relative;
+  text-align: center;
+  margin-top: 250px;
+  vertical-align: middle;
 }
-div#fullpage > section:nth-child(2) .underSection > div > div > * {
-  margin: 2.5rem 0;
+@media (min-width: 37.5em) {
+  div#fullpage > section:nth-child(2) .content {
+    margin-top: 30vh;
+    height: 70%;
+  }
+}
+div#fullpage > section:nth-child(2) .content > div.presentation {
+  margin: 200px 0;
+}
+div#fullpage > section:nth-child(2) .content > div.presentation > * {
+  margin: 25px 0;
 }
 div#fullpage > section:nth-child(2) p {
   font-family: "Estandar-SemiBold", sans-serif;

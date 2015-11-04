@@ -142,32 +142,35 @@
 
     <!--  SECTION 2  -->
     <section class="section">
-        <div class="vWrapper">
+        <div class="vWrapperDesktop">
             <div class="content-window">
                 <div data-type="background" data-speed="2"></div>
             </div>
-            <div class="flexRow">
-                <div class="flexCol">
-                    <div class="flexRow upperSection"></div>
-                    <div class="flexRow underSection">
-                        <div class="flexCol">
 
-                            <img class="myFace" src="<?php echo get_template_directory_uri() ?>/images/joel-face.png" alt="myFace">
 
-                            <div class="presentation">
-                                <h1>{ Joel Alphonso }</h1>
+            <div class="content">
 
-                                <div class="flexResponsiveRow"><p>Développeur</p><p><span> | </span></p><p>Programmeur</p><p><span> | </span></p><p>Designer</p></div>
-                                <div>
-                                    <a class="btnLight" href="#"> Télécharger CV </a>
-                                </div>
-                            </div>
+                <img class="myFace" src="<?php echo get_template_directory_uri() ?>/images/joel-face.png" alt="myFace">
 
-                        </div>
+                <div class="presentation">
+                    <h1>{ Joel Alphonso }</h1>
+
+                    <div class="flexResponsiveRow"><p>Développeur</p>
+
+                        <p><span> | </span></p>
+
+                        <p>Programmeur</p>
+
+                        <p><span> | </span></p>
+
+                        <p>Designer</p></div>
+                    <div>
+                        <a class="btnLight" href="#"> Télécharger CV </a>
                     </div>
                 </div>
+
+
             </div>
-        </div>
     </section>
 
     <!--  SECTION 3  -->
