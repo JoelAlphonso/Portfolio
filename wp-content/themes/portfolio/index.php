@@ -174,7 +174,164 @@
     </section>
 
     <!--  SECTION 3  -->
-    <section class="section"></section>
+    <section class="section">
+        <div class="vWrapperDesktop">
+            <div class="upperSection">
+
+                <div class="flexRow">
+                    <div>
+                        <h2>Compétances et objectif</h2>
+
+                        <p>Travailler dans une entreprise qui me permettra de participer à toutes les étapes d'un
+                            projet, que ce soit la partie créative ou la partie programmation, et qui offrirais des
+                            possibilités d'avancement en gestion de projet</p>
+                    </div>
+
+                    <div class="flexCol">
+                        <div class="flexRow compContainer">
+
+                            <div class="designComp">
+                                <div class="flexRow">
+                                    <div class="flexCol">
+                                        <div class="cStatContainer">
+                                            <div class="statOverflow">
+                                                <div>
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cStatContainer">
+                                            <div class="statOverflow">
+                                                <div>
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cStatContainer">
+                                            <div class="statOverflow">
+                                                <div>
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cStatContainer">
+                                            <div class="statOverflow">
+                                                <div>
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cStatContainer">
+                                            <div class="statOverflow">
+                                                <div>
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flexCol">
+                                        <p>Design</p>
+
+                                        <p>Design</p>
+
+                                        <p>Design</p>
+
+                                        <p>Design</p>
+
+                                        <p>Design</p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="progComp">
+
+                                <div class="flexRow">
+
+                                    <div class="flexCol">
+                                        <p>Design</p>
+                                        <p>Design</p>
+                                        <p>Design</p>
+                                        <p>Design</p>
+                                        <p>Design</p>
+                                        <p>Design</p>
+                                    </div>
+
+                                    <div class="flexCol">
+
+                                        <div class="sStatContainer">
+                                            <div class="statOverflow">
+                                                <div>
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sStatContainer">
+                                            <div class="statOverflow">
+                                                <div>
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div><div class="sStatContainer">
+                                            <div class="statOverflow">
+                                                <div>
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div><div class="sStatContainer">
+                                            <div class="statOverflow">
+                                                <div>
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div><div class="sStatContainer">
+                                            <div class="statOverflow">
+                                                <div>
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sStatContainer">
+                                            <div class="statOverflow">
+                                                <div>
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="underSection">
+                <div class="flexResponsiveRow">
+                    <div class="flexCol">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/feat-icon-1.svg" alt="feat-1">
+
+                        <p>Programmation Front-End</p>
+                    </div>
+                    <div class="flexCol">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/feat-icon-2.svg" alt="feat-2">
+
+                        <p>Design</p>
+                    </div>
+                    <div class="flexCol">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/feat-icon-3.svg" alt="feat-3">
+
+                        <p>Programmation Back-end</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!--  SECTION 4  -->
     <section class="section"></section>

@@ -72,9 +72,15 @@ Default style
 -------------------------- */
 body {
   background: #fafafa;
-  overflow: auto;
+  overflow: hidden;
   position: relative;
   height: 100vh;
+}
+
+p {
+  font-family: "Merlo-Medium" sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 h1 {
@@ -87,10 +93,9 @@ h1 {
 
 h2 {
   font-family: "Estandar-Bold", sans-serif;
-  color: white;
   font-size: 36px;
   font-size: 2.25rem;
-  text-transform: uppercase;
+  color: #363636;
 }
 
 a.btn, a.btnLight {
@@ -233,9 +238,19 @@ div.vWrapperDesktop {
   height: 100%;
 }
 
+.sectionH2, div#fullpage > section:nth-child(3) h2 {
+  margin: 0 0 90px 8.5%;
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+
 /* --------------------------
 1st section
 -------------------------- */
+div#fullpage > section:nth-child(1) h2 {
+  color: white;
+  text-transform: uppercase;
+}
 div#fullpage > section:nth-child(1) div.vWrapper {
   background: #2f2f2f;
 }
@@ -351,6 +366,230 @@ div#fullpage > section:nth-child(2) div.presentation > .flexResponsiveRow span {
   div#fullpage > section:nth-child(2) div.presentation > .flexResponsiveRow span {
     display: initial;
   }
+}
+
+/* --------------------------
+3rd section
+-------------------------- */
+div#fullpage > section:nth-child(3) {
+  color: #363636;
+}
+div#fullpage > section:nth-child(3) h2 {
+  margin-left: 17%;
+}
+div#fullpage > section:nth-child(3) .upperSection {
+  width: 100%;
+  padding: 75px 0 150px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+div#fullpage > section:nth-child(3) .upperSection p {
+  margin: 90px 17% 90px 34%;
+}
+@media (min-width: 64.375em) {
+  div#fullpage > section:nth-child(3) .upperSection p {
+    margin: 90px 0 90px 34%;
+  }
+}
+@media (min-width: 37.5em) {
+  div#fullpage > section:nth-child(3) .upperSection {
+    height: 70%;
+  }
+}
+div#fullpage > section:nth-child(3) .upperSection > .flexRow {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+@media (min-width: 64.375em) {
+  div#fullpage > section:nth-child(3) .upperSection > .flexRow {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+div#fullpage > section:nth-child(3) .upperSection > .flexRow > div:first-of-type {
+  text-align: left;
+}
+@media (min-width: 64.375em) {
+  div#fullpage > section:nth-child(3) .upperSection > .flexRow > div:first-of-type {
+    width: 50%;
+  }
+}
+@media (min-width: 64.375em) {
+  div#fullpage > section:nth-child(3) .upperSection > .flexRow > div:last-of-type {
+    width: 50%;
+  }
+}
+div#fullpage > section:nth-child(3) .upperSection .compContainer {
+  flex: 0 0;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@media (min-width: 37.5em) {
+  div#fullpage > section:nth-child(3) .upperSection .compContainer {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+div#fullpage > section:nth-child(3) .upperSection .designComp, div#fullpage > section:nth-child(3) .upperSection .progComp {
+  text-align: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 17%;
+}
+@media (min-width: 37.5em) {
+  div#fullpage > section:nth-child(3) .upperSection .designComp, div#fullpage > section:nth-child(3) .upperSection .progComp {
+    width: 50%;
+    margin: 0;
+  }
+}
+div#fullpage > section:nth-child(3) .upperSection .designComp > .flexRow, div#fullpage > section:nth-child(3) .upperSection .progComp > .flexRow {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  align-items: stretch;
+}
+div#fullpage > section:nth-child(3) .upperSection .designComp > .flexRow > .flexCol {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  align-items: flex-end;
+}
+div#fullpage > section:nth-child(3) .upperSection .designComp > .flexRow > .flexCol:last-of-type {
+  width: inherit;
+}
+div#fullpage > section:nth-child(3) .upperSection .progComp > .flexRow .flexCol {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  align-items: flex-start;
+}
+div#fullpage > section:nth-child(3) .upperSection .progComp > .flexRow > .flexCol:first-of-type {
+  width: inherit;
+}
+div#fullpage > section:nth-child(3) .upperSection .progComp > .flexRow {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  justify-content: flex-start;
+}
+div#fullpage > section:nth-child(3) .upperSection .designComp p, div#fullpage > section:nth-child(3) .upperSection .progComp p {
+  display: inline;
+  vertical-align: middle;
+  margin: 0;
+  font-family: "Estandar-Bold", sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  margin: 0 15px;
+}
+div#fullpage > section:nth-child(3) .upperSection .designComp p {
+  color: #cc3030;
+}
+div#fullpage > section:nth-child(3) .upperSection .designComp {
+  text-align: right;
+}
+div#fullpage > section:nth-child(3) .underSection {
+  background: #cc3030;
+  width: 100%;
+}
+div#fullpage > section:nth-child(3) .underSection p {
+  color: white;
+  font-family: "Estandar-ExtraLight", sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+@media (min-width: 37.5em) {
+  div#fullpage > section:nth-child(3) .underSection {
+    height: 30%;
+  }
+}
+div#fullpage > section:nth-child(3) .underSection .flexCol {
+  position: relative;
+  min-height: 250px;
+}
+div#fullpage > section:nth-child(3) .underSection .flexCol img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+div#fullpage > section:nth-child(3) .statContainer, div#fullpage > section:nth-child(3) .cStatContainer, div#fullpage > section:nth-child(3) .sStatContainer {
+  width: 125px;
+  display: inline-block;
+}
+div#fullpage > section:nth-child(3) .cStatContainer {
+  text-align: right;
+}
+div#fullpage > section:nth-child(3) .cStatContainer .statOverflow > div {
+  right: 0;
+}
+div#fullpage > section:nth-child(3) .cStatContainer span {
+  background-color: #cc3030;
+  border-radius: 50%;
+}
+div#fullpage > section:nth-child(3) .sStatContainer span {
+  background-color: #2f2f2f;
+}
+div#fullpage > section:nth-child(3) .statOverflow {
+  overflow: hidden;
+  width: 100%;
+  display: inline-block;
+  height: 15px;
+  position: relative;
+}
+div#fullpage > section:nth-child(3) .statOverflow > div {
+  width: 125px;
+  position: absolute;
+}
+div#fullpage > section:nth-child(3) .statOverflow span {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin: 0 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -14,7 +14,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 // VARIABLES
 
-$main-color: #CC3030;
+$main-color: #cc3030;
 $sec-color: #992424;
 $light-bg: #FAFAFA;
 $dark-bg: #2F2F2F;
@@ -27,9 +27,14 @@ Default style
 
 body {
   background: $light-bg;
-  overflow: auto;
+  overflow: hidden;
   position: relative;
   height: 100vh;
+}
+
+p {
+  font-family: "Merlo-Medium" sans-serif;
+  @include font-size(14);
 }
 
 h1 {
@@ -42,9 +47,8 @@ h1 {
 
 h2 {
   font-family: "Estandar-Bold", sans-serif;
-  color: $light-txt;
   @include font-size(36);
-  text-transform: uppercase;
+  color: $dark-txt;
 }
 
 a.btn {
@@ -117,7 +121,7 @@ div.vWrapper {
 }
 
 div.vWrapperDesktop {
-  @include breakpoint(small){
+  @include breakpoint(small) {
     height: 100vh;
   }
   position: relative;
@@ -137,6 +141,11 @@ div.vWrapperDesktop {
   height: 100%;
 }
 
+.sectionH2 {
+  margin: 0 0 90px 8.5%;
+  @include font-size(30);
+}
+
 /* --------------------------
 1st section
 -------------------------- */
@@ -144,6 +153,11 @@ div.vWrapperDesktop {
 div#fullpage > section:nth-child(1) {
 
   @extend .fH-section;
+
+  h2 {
+    color: $light-txt;
+    text-transform: uppercase;
+  }
 
   div.vWrapper {
     background: $dark-bg;
@@ -245,7 +259,7 @@ div#fullpage > section:nth-child(2) {
     background: $main-color;
     position: relative;
     text-align: center;
-    @include breakpoint(small){
+    @include breakpoint(small) {
       margin-top: 30vh;
       height: 70%;
     }
@@ -253,11 +267,11 @@ div#fullpage > section:nth-child(2) {
     vertical-align: middle;
   }
 
-  .content > div.presentation{
+  .content > div.presentation {
     margin: 200px 0;
   }
 
-  .content > div.presentation > *{
+  .content > div.presentation > * {
     margin: 25px 0;
   }
 
@@ -282,4 +296,213 @@ div#fullpage > section:nth-child(2) {
 
 }
 
+/* --------------------------
+3rd section
+-------------------------- */
+
+div#fullpage > section:nth-child(3) {
+
+  color: $dark-txt;
+
+  h2 {
+    @extend .sectionH2;
+    margin-left: 17%;
+  }
+
+  .upperSection {
+    width: 100%;
+
+    padding: 75px 0 150px 0;
+
+    p {
+      margin: 90px 17% 90px 34%;
+
+      @include breakpoint(large) {
+        margin: 90px 0 90px 34%;
+      }
+    }
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    @include breakpoint(small) {
+      height: 70%;
+    }
+
+    > .flexRow {
+      @include breakpoint(large) {
+        @include flex-direction(row);
+      }
+      @include flex-direction(column);
+      justify-content: flex-start;
+    }
+
+    > .flexRow > div:first-of-type {
+
+      @include breakpoint(large) {
+        width: 50%;
+      }
+      text-align: left;
+    }
+
+    > .flexRow > div:last-of-type {
+      @include breakpoint(large) {
+        width: 50%;
+      }
+    }
+
+    .compContainer {
+      flex: 0 0;
+      @include flex-direction(column);
+
+      @include breakpoint(small){
+        @include flex-direction(row);
+      }
+
+    }
+
+    .designComp, .progComp {
+      text-align: left;
+      @include flexbox();
+      @include justify-content(flex-start);
+      @include flex-direction(column);
+      margin: 0 17%;
+
+      @include breakpoint(small){
+        width: 50%;
+        margin: 0;
+      }
+
+    }
+
+    .designComp > .flexRow, .progComp > .flexRow {
+      @include justify-content(flex-end);
+      @include align-items(stretch);
+    }
+
+    .designComp > .flexRow > .flexCol {
+      @include align-items(flex-end);
+
+    }
+
+    .designComp > .flexRow > .flexCol:last-of-type{
+      width: inherit;
+    }
+
+    .progComp > .flexRow .flexCol {
+      @include align-items(flex-start);
+
+    }
+
+    .progComp > .flexRow > .flexCol:first-of-type {
+      width: inherit;
+    }
+
+    .progComp > .flexRow {
+      @include justify-content(flex-start);
+    }
+
+    .designComp p, .progComp p {
+      display: inline;
+      vertical-align: middle;
+      margin: 0;
+      font-family: "Estandar-Bold", sans-serif;
+      @include font-size(24);
+      margin: 0 15px;
+    }
+
+    .designComp p {
+      color: $main-color;
+    }
+
+    .designComp {
+      text-align: right;
+    }
+
+  }
+
+  .underSection {
+    background: $main-color;
+    width: 100%;
+
+    p {
+      color: $light-txt;
+      font-family: "Estandar-ExtraLight", sans-serif;
+      @include font-size(24);
+    }
+
+    @include breakpoint(small) {
+      height: 30%;
+    }
+
+    .flexCol {
+      position: relative;
+
+      min-height: 250px;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+
+    }
+
+  }
+
+  .statContainer {
+    width: 125px;
+    display: inline-block;
+  }
+
+  .cStatContainer {
+    @extend .statContainer;
+
+    text-align: right;
+
+    .statOverflow > div {
+      right: 0;
+    }
+
+    span {
+      background-color: $main-color;
+      border-radius: 50%;
+    }
+
+  }
+
+  .sStatContainer {
+    @extend .statContainer;
+
+    span {
+      background-color: $dark-bg;
+    }
+  }
+
+  .statOverflow {
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+    height: 15px;
+    position: relative;
+    > div {
+      width: 125px;
+      position: absolute;
+    }
+  }
+
+  .statOverflow span {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+}
 
