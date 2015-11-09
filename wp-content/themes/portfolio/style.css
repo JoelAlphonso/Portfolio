@@ -592,4 +592,92 @@ div#fullpage > section:nth-child(3) .statOverflow span {
   margin: 0 5px;
 }
 
+/* --------------------------
+3rd section
+-------------------------- */
+div#fullpage > section:nth-child(4) #projectsSlider p {
+  line-height: normal;
+}
+div#fullpage > section:nth-child(4) #projectsSlider h2 {
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+div#fullpage > section:nth-child(4) #projectsSlider h2 span {
+  display: inline-block;
+  line-height: 1.875rem;
+  padding: 0 10px;
+  border-right: 10px solid #363636;
+  border-left: 3px solid #363636;
+  font-family: "Estandar-ExtraLight", sans-serif;
+}
+div#fullpage > section:nth-child(4) #projectsSlider .cs-description {
+  padding-left: 8.5%;
+}
+@media (min-width: 50em) {
+  div#fullpage > section:nth-child(4) #projectsSlider .cs-description {
+    position: absolute;
+  }
+}
+div#fullpage > section:nth-child(4) #projectsSlider .cs-desc-content {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid #363636;
+}
+div#fullpage > section:nth-child(4) #projectsSlider .cs-desc-content .flexRow {
+  margin-bottom: 20px;
+}
+div#fullpage > section:nth-child(4) #projectsSlider .cs-desc-content .flexCol {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  justify-content: flex-start;
+}
+div#fullpage > section:nth-child(4) #projectsSlider .cs-desc-content > .flexRow > .flexCol:first-of-type {
+  flex: 0 0 80px;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  align-items: flex-end;
+}
+div#fullpage > section:nth-child(4) #projectsSlider .cs-desc-content > .flexRow > .flexCol:first-of-type p {
+  font-family: "Estandar-Bold", sans-serif;
+  text-transform: uppercase;
+}
+div#fullpage > section:nth-child(4) #projectsSlider .cs-desc-content > .flexRow > .flexCol:last-of-type {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 20px;
+}
+div#fullpage > section:nth-child(4) #projectsSlider .cs-desc-content a.toProject {
+  display: block;
+  background-color: #cc3030;
+  text-align: center;
+  font-family: "Estandar-ExtraLight", sans-serif;
+  color: white;
+  text-decoration: none;
+  padding: 5px 0;
+  margin-top: 40px;
+}
+@media (min-width: 50em) {
+  div#fullpage > section:nth-child(4) #projectsSlider .cs-media {
+    position: absolute;
+  }
+}
+div#fullpage > section:nth-child(4) #projectsSlider .cs-dots > a > span {
+  background-color: rgba(1, 1, 1, 0.5);
+  border: none;
+  box-shadow: none;
+  width: 15px;
+  height: 15px;
+}
+div#fullpage > section:nth-child(4) #projectsSlider .cs-dots > a.cs-dot-active > span {
+  background-color: rgba(1, 1, 1, 0.8);
+}
+
 /*# sourceMappingURL=style.css.map */

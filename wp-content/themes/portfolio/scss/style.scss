@@ -14,7 +14,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 // VARIABLES
 
-$main-color: #cc3030;
+$main-color: #CC3030;
 $sec-color: #992424;
 $light-bg: #FAFAFA;
 $dark-bg: #2F2F2F;
@@ -356,7 +356,7 @@ div#fullpage > section:nth-child(3) {
       flex: 0 0;
       @include flex-direction(column);
 
-      @include breakpoint(small){
+      @include breakpoint(small) {
         @include flex-direction(row);
       }
 
@@ -369,7 +369,7 @@ div#fullpage > section:nth-child(3) {
       @include flex-direction(column);
       margin: 0 17%;
 
-      @include breakpoint(small){
+      @include breakpoint(small) {
         width: 50%;
         margin: 0;
       }
@@ -386,7 +386,7 @@ div#fullpage > section:nth-child(3) {
 
     }
 
-    .designComp > .flexRow > .flexCol:last-of-type{
+    .designComp > .flexRow > .flexCol:last-of-type {
       width: inherit;
     }
 
@@ -502,6 +502,113 @@ div#fullpage > section:nth-child(3) {
     height: 15px;
     display: inline-block;
     margin: 0 5px;
+  }
+
+}
+
+/* --------------------------
+3rd section
+-------------------------- */
+
+div#fullpage > section:nth-child(4) {
+
+  //Slider
+  #projectsSlider {
+
+    p {
+      line-height: normal;
+    }
+
+    h2 {
+      @include font-size(30);
+
+      span {
+        display: inline-block;
+        line-height: 1.875rem;
+        padding: 0 10px;
+        border-right: 10px solid $dark-txt;
+        border-left: 3px solid $dark-txt;
+        font-family: "Estandar-ExtraLight", sans-serif;
+      }
+
+    }
+
+    .cs-description {
+      padding-left: 8.5%;
+      //position: relative;
+
+      @include breakpoint(medium) {
+        position: absolute;
+      }
+
+    }
+
+    .cs-desc-content {
+
+      margin-top: 40px;
+      padding-top: 30px;
+      border-top: 1px solid $dark-txt;
+
+      .flexRow {
+        margin-bottom: 20px;
+      }
+
+      .flexCol {
+        @include justify-content(flex-start);
+      }
+
+      > .flexRow > .flexCol:first-of-type {
+        flex: 0 0 80px;
+        @include align-items(flex-end);
+
+        p {
+          font-family: "Estandar-Bold", sans-serif;
+          text-transform: uppercase;
+        }
+      }
+
+      > .flexRow > .flexCol:last-of-type {
+        @include align-items(flex-start);
+        text-align: left;
+        margin-left: 20px;
+      }
+
+      a.toProject {
+        display: block;
+        background-color: $main-color;
+        text-align: center;
+        font-family: "Estandar-ExtraLight", sans-serif;
+        color: $light-txt;
+        text-decoration: none;
+        padding: 5px 0;
+        margin-top: 40px;
+      }
+
+    }
+
+    .cs-media {
+      //position: relative;
+
+      @include breakpoint(medium) {
+        position: absolute;
+      }
+    }
+
+    .cs-dots > a > span {
+      background-color: rgba(1, 1, 1, 0.5);
+      border: none;
+      box-shadow: none;
+      width: 15px;
+      height: 15px;
+    }
+
+    .cs-dots > a.cs-dot-active > span {
+      background-color: rgba(1, 1, 1, 0.8);
+    }
+
+    //hover pour dots
+    //border-radius: 50% 50% 50% 50%/65% 65% 35% 35%;
+
   }
 
 }

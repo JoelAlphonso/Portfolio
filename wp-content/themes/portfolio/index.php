@@ -251,10 +251,15 @@
 
                                     <div class="flexCol">
                                         <p>Design</p>
+
                                         <p>Design</p>
+
                                         <p>Design</p>
+
                                         <p>Design</p>
+
                                         <p>Design</p>
+
                                         <p>Design</p>
                                     </div>
 
@@ -273,19 +278,22 @@
                                                     <span></span><span></span><span></span><span></span><span></span>
                                                 </div>
                                             </div>
-                                        </div><div class="sStatContainer">
+                                        </div>
+                                        <div class="sStatContainer">
                                             <div class="statOverflow">
                                                 <div>
                                                     <span></span><span></span><span></span><span></span><span></span>
                                                 </div>
                                             </div>
-                                        </div><div class="sStatContainer">
+                                        </div>
+                                        <div class="sStatContainer">
                                             <div class="statOverflow">
                                                 <div>
                                                     <span></span><span></span><span></span><span></span><span></span>
                                                 </div>
                                             </div>
-                                        </div><div class="sStatContainer">
+                                        </div>
+                                        <div class="sStatContainer">
                                             <div class="statOverflow">
                                                 <div>
                                                     <span></span><span></span><span></span><span></span><span></span>
@@ -334,7 +342,117 @@
     </section>
 
     <!--  SECTION 4  -->
-    <section class="section"></section>
+    <section class="section">
+
+        <div class="vWrapperDesktop">
+
+            <div id="projectsSlider" class="cardslider">
+
+                <?php
+                $args = array(
+                        'posts_per_page' => 100,
+                        'post_type' => 'project'
+                );
+                query_posts($args);
+                if (have_posts()) : while (have_posts()) : the_post();
+                    ?>
+                    <!-- first slide -->
+                    <div class="cs-slide">
+                        <div class="cs-description">
+                            <h2 class="cs-desc-title">Projet <span><?php the_title() ?></span></h2>
+
+                            <div class="cs-desc-content">
+                                <!-- item description contents goes here -->
+                                <!-- contexte -->
+                                <div class="flexRow">
+                                    <div class="flexCol">
+                                        <p>Contexte</p>
+                                    </div>
+                                    <div class="flexCol">
+                                        <p><?php echo get_field('contexte') ?></p>
+                                    </div>
+                                </div>
+
+                                <!-- réalisé -->
+                                <div class="flexRow">
+                                    <div class="flexCol">
+                                        <p>Réalisé</p>
+                                    </div>
+                                    <div class="flexCol">
+
+                                        <?php if (get_field('equipe')): ?>
+                                            <p>En équipe de <?php echo get_field('nombre_de_personnes'); ?></p>
+                                        <?php else: ?>
+                                            <p>Seul</p>
+                                        <?php endif; ?>
+
+                                    </div>
+                                </div>
+
+                                <!-- Outils -->
+                                <div class="flexRow">
+                                    <div class="flexCol">
+                                        <p>Outils</p>
+                                    </div>
+                                    <div class="flexCol">
+                                        <p><?php echo implode(', ', get_field('outils')); ?></p>
+                                    </div>
+                                </div>
+
+                                <!-- Compétences -->
+                                <div class="flexRow">
+                                    <div class="flexCol">
+                                        <p>Compétences</p>
+                                    </div>
+                                    <div class="flexCol">
+                                        <p><?php echo get_field('competences'); ?></p>
+                                    </div>
+                                </div>
+
+                                <!-- Description -->
+                                <div class="flexRow">
+                                    <div class="flexCol">
+                                        <p>Description</p>
+                                    </div>
+                                    <div class="flexCol">
+                                        <p><?php echo get_field('description'); ?></p>
+                                    </div>
+                                </div>
+
+                                <?php if (get_field('voir_projet')): ?>
+                                    <a href="<?php echo get_field('voir_projet'); ?>" target="_blank" class="toProject">Voir le projet</a>
+                                <?php endif; ?>
+
+                            </div>
+                        </div>
+                        <div class="cs-media">
+                            <a href="<?php echo get_field('screenshot') ?>" target="_blank" class="cs-media-item"><img src="<?php echo get_field('screenshot') ?>" alt=""/></a>
+                        </div>
+                    </div>
+                <?php endwhile; endif; ?>
+
+
+                <!-- second slide -->
+                <div class="cs-slide">
+                    <div class="cs-description">
+                        <h2 class="cs-desc-title">Item Title</h2>
+
+                        <div class="cs-desc-content">
+                            <!-- item description contents goes here -->
+                        </div>
+                    </div>
+                    <div class="cs-media">
+                        <a href="#" class="cs-media-item"><img src="images/1.jpg" alt=""/></a>
+                        <a href="#" class="cs-media-item"><img src="images/2.jpg" alt=""/></a>
+                    </div>
+                </div>
+
+                <!-- ...other slides -->
+            </div>
+
+        </div>
+
+    </section>
 
     <!--  SECTION 5  -->
     <section class="section"><?php get_footer(); ?></section>
