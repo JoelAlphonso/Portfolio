@@ -6,8 +6,24 @@
 
 jQuery(document).ready(function($){
 
+    // Handle smoothWheel
+    enableScroll();
+
     // Instantiate wiggle on .wiggle
     wiggle(".wiggle");
+
+    // Bind click event
+    $('body').on('click', '.showImage', function(){
+       showImage(this);
+    });
+
+    $('body').on('click', '.openVideo', function(){
+        showVideo(this);
+    });
+
+    $('body').on('click', '.overlayExit', function(){
+        hideOverlay();
+    });
 
     //Vertical Parallax
 
@@ -32,7 +48,7 @@ function wiggle(selector){
         wiggleProp(this, 'rotation', -5, 5);
         wiggleProp(this, 'x', -10, 10);
         wiggleProp(this, 'y', -10, 10);
-    })
+    });
 }
 
 function wiggleProp(element, prop, min, max) {
@@ -46,5 +62,48 @@ function wiggleProp(element, prop, min, max) {
     tweenProps[prop] = Math.random() * (max - min) + min;
 
     TweenMax.to(element, duration, tweenProps);
+}
+
+function showImage($image){
+
+    disableScroll();
+
+    $href = jQuery($image).data('href');
+
+    jQuery('.overlay').addClass('visible');
+
+    jQuery('.overlayContent').addClass('grow-off').html('<img src="'+ $href +'" alt="popup image"/>');
+
+}
+
+function showVideo($image){
+
+    disableScroll();
+
+    $href = jQuery($image).data('href');
+
+    jQuery('.overlay').addClass('visible');
+
+    jQuery('.overlayContent').removeClass('grow-off').html('<div class="embed-container"><iframe src="' + $href + '" frameborder="0" allowfullscreen></iframe></div>');
+
+}
+
+
+function hideOverlay(){
+
+    enableScroll();
+
+    jQuery('.overlay').removeClass('visible');
+
+    jQuery('.overlayContent').empty();
+
+}
+
+function disableScroll(){
+    jQuery(document).smoothWheel({remove:"true"});
+}
+
+function enableScroll(){
+    jQuery(document).smoothWheel();
 }
 

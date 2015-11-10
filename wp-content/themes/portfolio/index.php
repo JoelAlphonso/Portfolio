@@ -2,6 +2,16 @@
 
 <body <?php body_class(); ?>>
 
+<div class="overlay">
+    <div class="overlayExit"></div>
+    <div class="overlayOverflow">
+        <div class="flexRow">
+            <div class="overlayContent"></div>
+        </div>
+
+    </div>
+</div>
+
 <!-- FULLPAGE ID -->
 <div id="fullpage">
 
@@ -165,7 +175,7 @@
 
                         <p>Designer</p></div>
                     <div>
-                        <a class="btnLight" href="#"> Télécharger CV </a>
+                        <a class="btnLight" href="http://joeldesign.ca/Joel Alphonso_Curriculum Vitae.pdf" target="_blank"> Télécharger CV </a>
                     </div>
                 </div>
 
@@ -419,35 +429,62 @@
                                     </div>
                                 </div>
 
+                                <?php if (get_field('collaborateurs')): ?>
+
+                                    <!--Collaborateurs-->
+                                    <div class="flexRow">
+                                        <div class="flexCol">
+                                            <p>Collaborateur(s)</p>
+                                        </div>
+                                        <div class="flexCol">
+                                            <?php
+                                            $array = get_field('collaborateurs');
+                                            $collabs = explode(',', $array);
+                                            foreach ($collabs as $collab) {
+                                                $collabInfo = explode(';', $collab);
+                                                echo '<a href="' . $collabInfo[1] . '" target="_blank"> ' . $collabInfo[0] . '</a>';
+                                            }
+                                            ?>
+                                        </div>
+                                    </div>
+
+                                <?php endif; ?>
+
+                                <!--btn voir video-->
+                                <?php if (get_field('video')): ?>
+                                    <a href="javascript:void(0)" data-href="<?php echo get_field('video'); ?>?autoplay=1" class="btnProjet openVideo">Voir
+                                        la vidéo</a>
+                                <?php endif; ?>
+
+                                <!--btn voir projet-->
                                 <?php if (get_field('voir_projet')): ?>
-                                    <a href="<?php echo get_field('voir_projet'); ?>" target="_blank" class="toProject">Voir le projet</a>
+                                    <a href="<?php echo get_field('voir_projet'); ?>" target="_blank" class="btnProjet">Voir
+                                        le projet</a>
                                 <?php endif; ?>
 
                             </div>
                         </div>
-                        <div class="cs-media">
-                            <a href="<?php echo get_field('screenshot') ?>" target="_blank" class="cs-media-item"><img src="<?php echo get_field('screenshot') ?>" alt=""/></a>
+
+                        <div class="cs-media <?php if (get_field('en_ranger')) {
+                            echo "tow-in-row";
+                        } ?>">
+
+                            <?php
+                            $images = get_field('screenshot');
+                            foreach ($images as $image):
+                                $addClass = "";
+                                if($image['description'] == "ipad"){$addClass = "ipadSize";}
+                                elseif($image['description'] == "mobile"){$addClass = "mobileSize";}
+                                ?>
+
+                                <a href="javascript:void(0);" data-href="<?php echo $image['url']; ?>" class="cs-media-item showImage <?php echo $addClass;?>"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"/></a>
+
+                            <?php endforeach; ?>
                         </div>
+
                     </div>
                 <?php endwhile; endif; ?>
 
-
-                <!-- second slide -->
-                <div class="cs-slide">
-                    <div class="cs-description">
-                        <h2 class="cs-desc-title">Item Title</h2>
-
-                        <div class="cs-desc-content">
-                            <!-- item description contents goes here -->
-                        </div>
-                    </div>
-                    <div class="cs-media">
-                        <a href="#" class="cs-media-item"><img src="images/1.jpg" alt=""/></a>
-                        <a href="#" class="cs-media-item"><img src="images/2.jpg" alt=""/></a>
-                    </div>
-                </div>
-
-                <!-- ...other slides -->
             </div>
 
         </div>

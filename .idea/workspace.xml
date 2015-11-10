@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcdfd818-f05d-4a9e-b3f0-17a2a49fc956" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\data\localweb\projects\Portfolio\wp-content\plugins\hello.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/portfolio/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/portfolio/functions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/portfolio/index.php" afterPath="$PROJECT_DIR$/wp-content/themes/portfolio/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/portfolio/portfolio.sublime-workspace" afterPath="$PROJECT_DIR$/wp-content/themes/portfolio/portfolio.sublime-workspace" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/portfolio/js/script.js" afterPath="$PROJECT_DIR$/wp-content/themes/portfolio/js/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/portfolio/style.css.map" afterPath="$PROJECT_DIR$/wp-content/themes/portfolio/style.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/portfolio/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/portfolio/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/portfolio/scss/style.scss" afterPath="$PROJECT_DIR$/wp-content/themes/portfolio/scss/style.scss" />
@@ -29,11 +29,39 @@
       <content type="file-editors">
         <state>
           <leaf>
+            <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
+              <entry file="file://$USER_HOME$/Desktop/functions.php">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="0.13407822">
+                    <caret line="24" column="79" selection-start-line="24" selection-start-column="79" selection-end-line="24" selection-end-column="79" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
             <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/wp-content/themes/portfolio/scss/style.scss">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.88284516">
-                    <caret line="609" column="53" selection-start-line="609" selection-start-column="53" selection-end-line="609" selection-end-column="53" />
+                  <state vertical-scroll-proportion="0.70658034">
+                    <caret line="678" column="17" selection-start-line="678" selection-start-column="17" selection-end-line="678" selection-end-column="17" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="jquery.smoothwheel.js" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/wp-content/themes/portfolio/js/jquery.smoothwheel.js">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="0.0">
+                    <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
                     <folding />
                   </state>
                 </provider>
@@ -62,7 +90,7 @@
             <file leaf-file-name="cardslider.css" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/wp-content/themes/portfolio/plugins/cardslider/cardslider.css">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="43.58621">
+                  <state vertical-scroll-proportion="0.0">
                     <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
                     <folding />
                   </state>
@@ -123,24 +151,6 @@
         </state>
       </content>
     </window>
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
-              <entry file="file://$USER_HOME$/Desktop/functions.php">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.0">
-                    <caret line="24" column="79" selection-start-line="24" selection-start-column="79" selection-end-line="24" selection-end-column="79" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -151,8 +161,8 @@
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/portfolio/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.32">
-              <caret line="66" column="83" selection-start-line="66" selection-start-column="83" selection-end-line="66" selection-end-column="83" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="71" column="40" selection-start-line="71" selection-start-column="40" selection-end-line="71" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -181,19 +191,11 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/portfolio/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3327615">
-              <caret line="367" column="57" selection-start-line="367" selection-start-column="57" selection-end-line="367" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/portfolio/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-              <folding />
+            <state vertical-scroll-proportion="0.67066896">
+              <caret line="493" column="24" selection-start-line="493" selection-start-column="24" selection-end-line="493" selection-end-column="24" />
+              <folding>
+                <marker date="1447135861713" expanded="true" signature="22797:23273" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -202,7 +204,7 @@
         <entry file="file://$PROJECT_DIR$/wp-content/themes/portfolio/js/frontpage.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -212,7 +214,7 @@
         <entry file="file://$PROJECT_DIR$/wp-content/themes/portfolio/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <caret line="35" column="26" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="26" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
               </folding>
@@ -225,16 +227,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_flexbox.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/portfolio/scss/_flexbox.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -268,13 +260,14 @@
         <option value="$PROJECT_DIR$/wp-content/themes/portfolio/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/portfolio/scss/fonts.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/portfolio/scss/mixins.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/portfolio/js/script.js" />
-        <option value="$PROJECT_DIR$/wp-content/themes/portfolio/js/frontpage.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/portfolio/plugins/cardslider/jquery.cardslider.source.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/portfolio/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/portfolio/plugins/cardslider/cardslider.css" />
-        <option value="$PROJECT_DIR$/wp-content/themes/portfolio/index.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/portfolio/js/frontpage.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/portfolio/js/jquery.smoothwheel.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/portfolio/js/script.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/portfolio/scss/style.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/portfolio/index.php" />
       </list>
     </option>
   </component>
@@ -547,20 +540,26 @@
       <option name="project" value="LOCAL" />
       <updated>1446781211615</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="projects section">
+      <created>1447046678929</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1447046678929</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20260416" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.118229166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32911393" sideWeight="0.50625" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32911393" sideWeight="0.5083333" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32911393" sideWeight="0.49375" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32911393" sideWeight="0.49166667" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.48333332" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -594,7 +593,8 @@
     <MESSAGE value="some plugins" />
     <MESSAGE value="Update flex" />
     <MESSAGE value="remove fullpage.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove fullpage.js" />
+    <MESSAGE value="projects section" />
+    <option name="LAST_COMMIT_MESSAGE" value="projects section" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -603,14 +603,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/portfolio/plugins/parallax-master/deploy/jquery.parallax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/portfolio/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -623,7 +615,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="94" selection-start-line="20" selection-start-column="94" selection-end-line="20" selection-end-column="94" />
-          <folding />
+          <folding>
+            <marker date="1447135861713" expanded="true" signature="22797:23273" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -689,7 +683,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1447135861713" expanded="true" signature="22797:23273" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -747,7 +743,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="32" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="32" />
-          <folding />
+          <folding>
+            <marker date="1447135861713" expanded="true" signature="22797:23273" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -797,7 +795,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding />
+          <folding>
+            <marker date="1447135861713" expanded="true" signature="22797:23273" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -813,7 +813,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding />
+          <folding>
+            <marker date="1447135861713" expanded="true" signature="22797:23273" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -829,7 +831,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1447135861713" expanded="true" signature="22797:23273" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -852,14 +856,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/portfolio/scss/_flexbox.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -894,21 +890,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/portfolio/footer.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/portfolio/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+          <caret line="71" column="40" selection-start-line="71" selection-start-column="40" selection-end-line="71" selection-end-column="40" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/portfolio/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -916,6 +902,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/portfolio/plugins/cardslider/cardslider.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -944,6 +938,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="243" column="17" selection-start-line="243" selection-start-column="17" selection-end-line="243" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/Desktop/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -954,16 +956,24 @@
     </entry>
     <entry file="file://$USER_HOME$/Desktop/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.13407822">
           <caret line="24" column="79" selection-start-line="24" selection-start-column="79" selection-end-line="24" selection-end-column="79" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/portfolio/js/frontpage.js">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/portfolio/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.08233276">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/portfolio/scss/_flexbox.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.058319">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -976,43 +986,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/portfolio/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.32">
-          <caret line="66" column="83" selection-start-line="66" selection-start-column="83" selection-end-line="66" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/style.css">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/portfolio/js/jquery.smoothwheel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="243" column="17" selection-start-line="243" selection-start-column="17" selection-end-line="243" selection-end-column="17" />
+          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/portfolio/plugins/cardslider/cardslider.css">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/portfolio/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="43.58621">
-          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="26" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/portfolio/js/frontpage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/portfolio/scss/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.88284516">
-          <caret line="609" column="53" selection-start-line="609" selection-start-column="53" selection-end-line="609" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.70658034">
+          <caret line="678" column="17" selection-start-line="678" selection-start-column="17" selection-end-line="678" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/portfolio/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3327615">
-          <caret line="367" column="57" selection-start-line="367" selection-start-column="57" selection-end-line="367" selection-end-column="57" />
-          <folding />
+        <state vertical-scroll-proportion="0.67066896">
+          <caret line="493" column="24" selection-start-line="493" selection-start-column="24" selection-end-line="493" selection-end-column="24" />
+          <folding>
+            <marker date="1447135861713" expanded="true" signature="22797:23273" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

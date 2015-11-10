@@ -33,7 +33,7 @@ body {
 }
 
 p {
-  font-family: "Merlo-Medium" sans-serif;
+  font-family: "Merlo-Medium", sans-serif;
   @include font-size(14);
 }
 
@@ -51,12 +51,21 @@ h2 {
   color: $dark-txt;
 }
 
+a {
+  font-family: "Merlo-Medium", sans-serif;
+  @include font-size(14);
+  line-height: normal;
+  color: $main-color;
+  text-decoration: none;
+}
+
 a.btn {
   border: 2px solid;
-  padding: 0.5rem 3rem;
+  padding: 1rem 3rem;
   font-family: "Estandar-ExtraLight", sans-serif;
   display: inline-block;
   text-decoration: none;
+  @include font-size(18);
 }
 
 a.btnLight {
@@ -144,6 +153,74 @@ div.vWrapperDesktop {
 .sectionH2 {
   margin: 0 0 90px 8.5%;
   @include font-size(30);
+}
+
+/* --------------------------
+overlay
+-------------------------- */
+
+.overlay {
+  overflow: auto;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 10;
+  display: none;
+  @include justify-content(center);
+  @include align-items(center);
+
+  > div.overlayOverflow{
+    max-height: 100%;
+    overflow: auto;
+    width: 100%;
+  }
+
+  > div.overlayExit{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+.visible{
+  @include flexbox;
+}
+
+.overlayContent {
+  @include flex(1 1 auto);
+  max-height: 90%;
+  max-width: 90%;
+  background-color: $light-bg;
+  position: relative;
+}
+
+.overlayContent > *{
+  max-width: 100%;
+  display: block;
+}
+
+.grow-off{
+  @include flex(0 1 auto);
+  max-height: inherit;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* --------------------------
@@ -573,15 +650,16 @@ div#fullpage > section:nth-child(4) {
         margin-left: 20px;
       }
 
-      a.toProject {
+      a.btnProjet {
         display: block;
         background-color: $main-color;
         text-align: center;
         font-family: "Estandar-ExtraLight", sans-serif;
         color: $light-txt;
         text-decoration: none;
-        padding: 5px 0;
+        padding: 10px 0;
         margin-top: 40px;
+        @include font-size(18);
       }
 
     }
@@ -592,6 +670,15 @@ div#fullpage > section:nth-child(4) {
       @include breakpoint(medium) {
         position: absolute;
       }
+
+      .mobileSize{
+        width: 11%;
+      }
+
+      .ipadSize{
+        width: 22%;
+      }
+
     }
 
     .cs-dots > a > span {

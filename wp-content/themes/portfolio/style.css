@@ -78,7 +78,7 @@ body {
 }
 
 p {
-  font-family: "Merlo-Medium" sans-serif;
+  font-family: "Merlo-Medium", sans-serif;
   font-size: 14px;
   font-size: 0.875rem;
 }
@@ -98,12 +98,23 @@ h2 {
   color: #363636;
 }
 
+a {
+  font-family: "Merlo-Medium", sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: normal;
+  color: #cc3030;
+  text-decoration: none;
+}
+
 a.btn, a.btnLight {
   border: 2px solid;
-  padding: 0.5rem 3rem;
+  padding: 1rem 3rem;
   font-family: "Estandar-ExtraLight", sans-serif;
   display: inline-block;
   text-decoration: none;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 a.btnLight {
@@ -242,6 +253,93 @@ div.vWrapperDesktop {
   margin: 0 0 90px 8.5%;
   font-size: 30px;
   font-size: 1.875rem;
+}
+
+/* --------------------------
+overlay
+-------------------------- */
+.overlay {
+  overflow: auto;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 10;
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+}
+.overlay > div.overlayOverflow {
+  max-height: 100%;
+  overflow: auto;
+  width: 100%;
+}
+.overlay > div.overlayExit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.visible {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.overlayContent {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -moz-box-flex: 1;
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  max-height: 90%;
+  max-width: 90%;
+  background-color: #fafafa;
+  position: relative;
+}
+
+.overlayContent > * {
+  max-width: 100%;
+  display: block;
+}
+
+.grow-off {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -moz-box-flex: 0;
+  -moz-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  max-height: inherit;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* --------------------------
@@ -654,20 +752,28 @@ div#fullpage > section:nth-child(4) #projectsSlider .cs-desc-content > .flexRow 
   text-align: left;
   margin-left: 20px;
 }
-div#fullpage > section:nth-child(4) #projectsSlider .cs-desc-content a.toProject {
+div#fullpage > section:nth-child(4) #projectsSlider .cs-desc-content a.btnProjet {
   display: block;
   background-color: #cc3030;
   text-align: center;
   font-family: "Estandar-ExtraLight", sans-serif;
   color: white;
   text-decoration: none;
-  padding: 5px 0;
+  padding: 10px 0;
   margin-top: 40px;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 @media (min-width: 50em) {
   div#fullpage > section:nth-child(4) #projectsSlider .cs-media {
     position: absolute;
   }
+}
+div#fullpage > section:nth-child(4) #projectsSlider .cs-media .mobileSize {
+  width: 11%;
+}
+div#fullpage > section:nth-child(4) #projectsSlider .cs-media .ipadSize {
+  width: 22%;
 }
 div#fullpage > section:nth-child(4) #projectsSlider .cs-dots > a > span {
   background-color: rgba(1, 1, 1, 0.5);
