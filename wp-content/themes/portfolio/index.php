@@ -2,11 +2,18 @@
 
 <body <?php body_class(); ?>>
 
-<div class="overlay">
+<div class="overlay hidden">
     <div class="overlayExit"></div>
     <div class="overlayOverflow">
         <div class="flexRow">
-            <div class="overlayContent"></div>
+            <div class="overlayContent">
+                <span class="overlayExit">
+                    <span><span></span></span>
+                    <span><span></span></span>
+                </span>
+
+                <div class="content"></div>
+            </div>
         </div>
 
     </div>
@@ -151,7 +158,7 @@
     </section>
 
     <!--  SECTION 2  -->
-    <section class="section">
+    <section id="apropos" class="section">
         <div class="vWrapperDesktop">
             <div class="content-window">
                 <div data-type="background" data-speed="2"></div>
@@ -175,7 +182,8 @@
 
                         <p>Designer</p></div>
                     <div>
-                        <a class="btnLight" href="http://joeldesign.ca/Joel Alphonso_Curriculum Vitae.pdf" target="_blank"> Télécharger CV </a>
+                        <a class="btnLight" href="http://joeldesign.ca/Joel Alphonso_Curriculum Vitae.pdf" target="_blank">
+                            Télécharger CV </a>
                     </div>
                 </div>
 
@@ -184,7 +192,7 @@
     </section>
 
     <!--  SECTION 3  -->
-    <section class="section">
+    <section id="competences" class="section">
         <div class="vWrapperDesktop">
             <div class="upperSection">
 
@@ -352,7 +360,7 @@
     </section>
 
     <!--  SECTION 4  -->
-    <section class="section">
+    <section id="portfolio" class="section">
 
         <div class="vWrapperDesktop">
 
@@ -473,11 +481,14 @@
                             $images = get_field('screenshot');
                             foreach ($images as $image):
                                 $addClass = "";
-                                if($image['description'] == "ipad"){$addClass = "ipadSize";}
-                                elseif($image['description'] == "mobile"){$addClass = "mobileSize";}
+                                if ($image['description'] == "ipad") {
+                                    $addClass = "ipadSize";
+                                } elseif ($image['description'] == "mobile") {
+                                    $addClass = "mobileSize";
+                                }
                                 ?>
 
-                                <a href="javascript:void(0);" data-href="<?php echo $image['url']; ?>" class="cs-media-item showImage <?php echo $addClass;?>"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"/></a>
+                                <a href="javascript:void(0);" data-href="<?php echo $image['url']; ?>" class="cs-media-item showImage <?php echo $addClass; ?>"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"/></a>
 
                             <?php endforeach; ?>
                         </div>
@@ -492,7 +503,93 @@
     </section>
 
     <!--  SECTION 5  -->
-    <section class="section"><?php get_footer(); ?></section>
+    <section class="section">
+        <div class="vWrapperDesktop">
+
+            <div class="flexCol">
+                <div class="content">
+                    <p>La définition d'un expert</p>
+
+                    <p><span>&ldquo; Quelqu'un qui sait quoi ne pas faire &rdquo;</span></p>
+
+                    <p>- Charles Willson</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--  SECTION 6  -->
+    <section id="contact" class="section">
+        <div class="vWrapperDesktop">
+            <div class="upperSection">
+                <div class="flexRow">
+                    <div>
+                        <h2>Contactez-moi</h2>
+
+                        <div class="formContainer">
+                            <?php echo do_shortcode('[ninja_forms id=1]'); ?>
+                        </div>
+
+                    </div>
+                    <div class="flexCol">
+                        <div>
+                            <div class="flexRow">
+                                <div class="flexCol"></div>
+                                <div class="flexCol">
+                                    <h3>Joel Alphonso</h3>
+                                </div>
+                            </div>
+                            <div class="flexRow">
+                                <div class="flexCol">
+                                    <p><span>Tel</span></p>
+                                </div>
+                                <div class="flexCol">
+                                    <p>514.464.4611</p>
+                                </div>
+                            </div>
+                            <div class="flexRow">
+                                <div class="flexCol">
+                                    <p><span>Courriel</span></p>
+                                </div>
+                                <div class="flexCol">
+                                    <p>Joel@joeldesign.ca</p>
+                                </div>
+                            </div>
+                            <div class="flexRow">
+                                <div class="flexCol"></div>
+                                <div class="flexCol">
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="flexRow">
+                                <div class="flexCol"></div>
+                                <div class="flexCol">
+                                    <div>
+                                        <img src="<?php echo get_template_directory_uri() ?>/images/linkedin.png" alt="linkedIn">
+                                        <img src="<?php echo get_template_directory_uri() ?>/images/pinterest.png" alt="pinterest">
+                                        <img src="<?php echo get_template_directory_uri() ?>/images/facebook.png" alt="facebook">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="underSection">
+                <div class="flexRow">
+                    <div class="flexCol">
+                        <div class="flexRow">
+                            <a class="btnLight" href="http://joeldesign.ca/Joel Alphonso_Curriculum Vitae.pdf" target="_blank">
+                                Télécharger CV </a>
+                        </div>
+                        <?php get_footer(); ?>
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
 
 </div>
 

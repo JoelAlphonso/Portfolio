@@ -15,7 +15,7 @@ function portfolio_scripts() {
 
         wp_enqueue_script('cardslider', get_template_directory_uri() . '/plugins/cardslider/jquery.cardslider.source.js', array('jquery'), false, true);
 
-        wp_enqueue_script('frontpagejs', get_template_directory_uri() . '/js/frontpage.js', array('jquery'), false, true);
+        wp_enqueue_script('frontpagejs', get_template_directory_uri() . '/js/frontpage.js', array('jquery'));
 
         wp_enqueue_script('greensock', "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js");
 
@@ -23,11 +23,17 @@ function portfolio_scripts() {
 
     wp_enqueue_script('smoothWheel' , get_template_directory_uri() . '/js/jquery.smoothwheel.js', array('jquery'));
 
+    wp_enqueue_script('full-screen-nav' , get_template_directory_uri() . '/plugins/full-screen-nav/main.js', array('jquery'));
+
+    wp_enqueue_script('smooth-scroll' , get_template_directory_uri() . '/plugins/jquery.smooth-scroll.js', array('jquery'));
+
     wp_enqueue_script('mainscript', get_template_directory_uri() . '/js/script.js', array('jquery'));
 
 	wp_enqueue_style( 'resetCSS', get_template_directory_uri() . '/css/reset.css' );
 
     wp_enqueue_style('fullpagecss', get_template_directory_uri() .  '/plugins/fullPage.js-master/jquery.fullPage.css');
+
+    wp_enqueue_style('full-screen-nav-style', get_template_directory_uri() .  '/plugins/full-screen-nav/style.css');
 
     wp_enqueue_style( 'portfolio-style', get_stylesheet_uri() );
 
