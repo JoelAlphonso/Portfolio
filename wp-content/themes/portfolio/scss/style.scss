@@ -27,7 +27,7 @@ Default style
 
 body {
   background: $light-bg;
-  overflow: hidden;
+  //overflow: hidden;
   position: relative;
   height: 100vh;
 }
@@ -170,10 +170,10 @@ header.cd-header, header.cd-header.is-visible, header.cd-header.is-fixed, header
   -ms-transition: opacity 0.5s;
   -o-transition: opacity 0.5s;
   transition: opacity 0.5s;
-  width: 50%;
+  width: 40px;
 
   @include breakpoint(medium) {
-    width: 70%;
+    width: 64px;
   }
 
   opacity: 0;
@@ -336,6 +336,20 @@ div#fullpage > section:nth-child(1) {
   h2 {
     color: $light-txt;
     text-transform: uppercase;
+    @include font-size(24);
+    @include breakpoint(small){
+      @include font-size(36);
+    }
+
+    &.creative{
+      font-family: "Bonbon", sans-serif;
+      text-transform: none;
+      @include font-size(28);
+      @include breakpoint(small){
+        @include font-size(42);
+      }
+    }
+
   }
 
   div.vWrapper {
@@ -406,6 +420,31 @@ div#fullpage > section:nth-child(1) {
       -o-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
     }
+
+    .layer[data-depth="0.3"],
+    .layer[data-depth="0.4"],
+    .layer[data-depth="0.5"],
+    .layer[data-depth="0.6"]{
+
+      display: none!important;
+
+      @include breakpoint(small){
+        display: inherit!important;
+      }
+
+    }
+
+    .layer[data-depth="0.3"],
+    .layer[data-depth="0.4"]{
+
+      display: none!important;
+
+      @include breakpoint(medium){
+        display: inherit!important;
+      }
+
+    }
+
   }
 
 }
@@ -486,6 +525,16 @@ div#fullpage > section:nth-child(3) {
   h2 {
     @extend .sectionH2;
     margin-left: 17%;
+    margin-bottom: 50px;
+  }
+
+  .vWrapperDesktop{
+
+    height: auto;
+
+    @include breakpoint(medium){
+      height: 100vh;
+    }
   }
 
   .upperSection {
@@ -494,22 +543,28 @@ div#fullpage > section:nth-child(3) {
     padding: 75px 0 150px 0;
 
     p {
-      margin: 90px 17% 90px 34%;
+      margin: 40px 17% 40px 17%;
 
       @include breakpoint(large) {
-        margin: 90px 0 90px 34%;
+        margin: 40px 0 40px 34%;
       }
+
+      line-height: 1.5rem;
+
     }
 
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 
-    @include breakpoint(small) {
+    @include breakpoint(medium) {
       height: 70%;
     }
 
     > .flexRow {
+
+      height: 100%;
+
       @include breakpoint(large) {
         @include flex-direction(row);
       }
@@ -518,6 +573,8 @@ div#fullpage > section:nth-child(3) {
     }
 
     > .flexRow > div:first-of-type {
+
+
 
       @include breakpoint(large) {
         width: 50%;
@@ -529,15 +586,18 @@ div#fullpage > section:nth-child(3) {
       @include breakpoint(large) {
         width: 50%;
       }
+
+
+
     }
 
     .compContainer {
-      flex: 0 0;
+      flex: 0 0 auto;
       @include flex-direction(column);
 
-      @include breakpoint(small) {
-        @include flex-direction(row);
-      }
+      //@include breakpoint(small) {
+      //  @include flex-direction(row);
+      //}
 
     }
 
@@ -546,12 +606,13 @@ div#fullpage > section:nth-child(3) {
       @include flexbox();
       @include justify-content(flex-start);
       @include flex-direction(column);
-      margin: 0 17%;
+      margin: 20px 17%;
+      height: 100%;
 
-      @include breakpoint(small) {
-        width: 50%;
-        margin: 0;
-      }
+      //@include breakpoint(small) {
+      //  width: 50%;
+      //  margin: 0;
+      //}
 
     }
 
@@ -561,29 +622,54 @@ div#fullpage > section:nth-child(3) {
     }
 
     .designComp > .flexRow > .flexCol {
-      @include align-items(flex-end);
+
+      &:first-of-type{
+        @include align-items(flex-end);
+      }
+
+      &:last-of-type{
+        @include align-items(flex-start);
+      }
+
+
 
     }
 
     .designComp > .flexRow > .flexCol:last-of-type {
-      width: inherit;
+      //width: inherit;
     }
 
-    .progComp > .flexRow .flexCol {
-      @include align-items(flex-start);
+    .progComp > .flexRow .flexCol,
+    .designComp > .flexRow .flexCol{
+
+      &:first-of-type{
+        @include align-items(flex-end);
+      }
+
+      &:last-of-type{
+        @include align-items(flex-start);
+      }
+
+      .sStatContainer{
+        text-align: left;
+      }
 
     }
 
-    .progComp > .flexRow > .flexCol:first-of-type {
-      width: inherit;
+    .progComp > .flexRow > .flexCol:first-of-type,
+    .designComp > .flexRow > .flexCol:first-of-type{
+      width: 50%;
+      height: 100%;
+      @include flex(1, 0, auto);
     }
 
-    .progComp > .flexRow {
+    .progComp > .flexRow,
+    .designComp > .flexRow{
       @include justify-content(flex-start);
     }
 
     .designComp p, .progComp p {
-      display: inline;
+      display: inline-block;
       vertical-align: middle;
       margin: 0;
       font-family: "Estandar-Bold", sans-serif;
@@ -611,7 +697,7 @@ div#fullpage > section:nth-child(3) {
       @include font-size(24);
     }
 
-    @include breakpoint(small) {
+    @include breakpoint(medium) {
       height: 30%;
     }
 
@@ -643,10 +729,10 @@ div#fullpage > section:nth-child(3) {
   .cStatContainer {
     @extend .statContainer;
 
-    text-align: right;
+    text-align: left;
 
     .statOverflow > div {
-      right: 0;
+      //right: 0;
     }
 
     span {
@@ -696,6 +782,7 @@ div#fullpage > section:nth-child(4) {
 
     p {
       line-height: normal;
+      width: 100%;
     }
 
     h2 {
@@ -743,6 +830,7 @@ div#fullpage > section:nth-child(4) {
         p {
           font-family: "Estandar-Bold", sans-serif;
           text-transform: uppercase;
+          width: auto;
         }
       }
 
@@ -927,6 +1015,10 @@ div#fullpage > section:nth-child(6) {
           border-top: none;
         }
 
+        > div.flexRow{
+          height: auto;
+        }
+
       }
 
       .flexRow > .flexCol {
@@ -984,6 +1076,7 @@ div#fullpage > section:nth-child(6) {
       float: right;
       background-color: $main-color;
       color: $light-txt;
+      cursor: pointer;
     }
 
     .ninja-forms-field {

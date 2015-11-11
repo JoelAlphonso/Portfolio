@@ -146,7 +146,7 @@
                 <li class="layer" data-depth="0.1">
                     <div class="flexRow">
                         <div class="flexCol">
-                            <h2>Créativité</h2>
+                            <h2 class="creative">Créativité</h2>
                         </div>
                         <div class="flexCol">
                             <h2>Logique</h2>
@@ -167,7 +167,7 @@
 
             <div class="content">
 
-                <img class="myFace" src="<?php echo get_template_directory_uri() ?>/images/joel-face.png" alt="myFace">
+                <img class="myFace" src="<?php echo get_template_directory_uri() ?>/images/joel-face.png" srcset="<?php echo get_template_directory_uri() ?>/images/joel-face.png 1x, <?php echo get_template_directory_uri() ?>/images/joel-face@2x.png 2x" alt="myFace">
 
                 <div class="presentation">
                     <h1>{ Joel Alphonso }</h1>
@@ -198,11 +198,11 @@
 
                 <div class="flexRow">
                     <div>
-                        <h2>Compétances et objectif</h2>
+                        <h2>Compétences et objectif</h2>
 
-                        <p>Travailler dans une entreprise qui me permettra de participer à toutes les étapes d'un
-                            projet, que ce soit la partie créative ou la partie programmation, et qui offrirais des
-                            possibilités d'avancement en gestion de projet</p>
+                        <p>Je suis quelqu'un qui recherche l'accomplissement et les défis. Travailler dans une entreprise qui me permettrait de participer au plus grand nombre d'étapes d'un
+                            même projet, autant pour la partie créative que la partie programmation, et qui offrirait des
+                            possibilités d'avancement en gestion de projet, me permettrait de m'approcher de l'accomplissement.</p>
                     </div>
 
                     <div class="flexCol">
@@ -210,54 +210,55 @@
 
                             <div class="designComp">
                                 <div class="flexRow">
+
                                     <div class="flexCol">
-                                        <div class="cStatContainer">
-                                            <div class="statOverflow">
-                                                <div>
-                                                    <span></span><span></span><span></span><span></span><span></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="cStatContainer">
-                                            <div class="statOverflow">
-                                                <div>
-                                                    <span></span><span></span><span></span><span></span><span></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="cStatContainer">
-                                            <div class="statOverflow">
-                                                <div>
-                                                    <span></span><span></span><span></span><span></span><span></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="cStatContainer">
-                                            <div class="statOverflow">
-                                                <div>
-                                                    <span></span><span></span><span></span><span></span><span></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="cStatContainer">
-                                            <div class="statOverflow">
-                                                <div>
-                                                    <span></span><span></span><span></span><span></span><span></span>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <p>Design</p>
+
+                                        <p>Ae</p>
+
+                                        <p>PS</p>
+
+                                        <p>AI</p>
+
+                                        <p>Sketch</p>
+
                                     </div>
                                     <div class="flexCol">
-                                        <p>Design</p>
-
-                                        <p>Design</p>
-
-                                        <p>Design</p>
-
-                                        <p>Design</p>
-
-                                        <p>Design</p>
-
+                                        <div class="cStatContainer">
+                                            <div class="statOverflow" style="width:100%;">
+                                                <div>
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cStatContainer">
+                                            <div class="statOverflow" style="width:80%;">
+                                                <div>
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cStatContainer">
+                                            <div class="statOverflow" style="width:60%;">
+                                                <div>
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cStatContainer">
+                                            <div class="statOverflow" style="width:80%;">
+                                                <div>
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cStatContainer">
+                                            <div class="statOverflow" style="width:100%;">
+                                                <div>
+                                                    <span></span><span></span><span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -268,58 +269,58 @@
                                 <div class="flexRow">
 
                                     <div class="flexCol">
-                                        <p>Design</p>
+                                        <p>HTML</p>
 
-                                        <p>Design</p>
+                                        <p>CSS</p>
 
-                                        <p>Design</p>
+                                        <p>jQuery</p>
 
-                                        <p>Design</p>
+                                        <p>Wordpress</p>
 
-                                        <p>Design</p>
+                                        <p>PHP</p>
 
-                                        <p>Design</p>
+                                        <p>C#</p>
                                     </div>
 
                                     <div class="flexCol">
 
                                         <div class="sStatContainer">
-                                            <div class="statOverflow">
+                                            <div class="statOverflow" style="width:90%;">
                                                 <div>
                                                     <span></span><span></span><span></span><span></span><span></span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="sStatContainer">
-                                            <div class="statOverflow">
+                                            <div class="statOverflow" style="width:100%;">
                                                 <div>
                                                     <span></span><span></span><span></span><span></span><span></span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="sStatContainer">
-                                            <div class="statOverflow">
+                                            <div class="statOverflow" style="width:90%;">
                                                 <div>
                                                     <span></span><span></span><span></span><span></span><span></span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="sStatContainer">
-                                            <div class="statOverflow">
+                                            <div class="statOverflow" style="width:80%;">
                                                 <div>
                                                     <span></span><span></span><span></span><span></span><span></span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="sStatContainer">
-                                            <div class="statOverflow">
+                                            <div class="statOverflow" style="width:80%;">
                                                 <div>
                                                     <span></span><span></span><span></span><span></span><span></span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="sStatContainer">
-                                            <div class="statOverflow">
+                                            <div class="statOverflow" style="width:70%;">
                                                 <div>
                                                     <span></span><span></span><span></span><span></span><span></span>
                                                 </div>
@@ -528,7 +529,7 @@
                         <h2>Contactez-moi</h2>
 
                         <div class="formContainer">
-                            <?php echo do_shortcode('[ninja_forms id=1]'); ?>
+                            <?php echo do_shortcode('[ninja_forms id=13]'); ?>
                         </div>
 
                     </div>
@@ -566,9 +567,20 @@
                                 <div class="flexCol"></div>
                                 <div class="flexCol">
                                     <div>
-                                        <img src="<?php echo get_template_directory_uri() ?>/images/linkedin.png" alt="linkedIn">
-                                        <img src="<?php echo get_template_directory_uri() ?>/images/pinterest.png" alt="pinterest">
-                                        <img src="<?php echo get_template_directory_uri() ?>/images/facebook.png" alt="facebook">
+                                        <a href="https://ca.linkedin.com/in/joël-alphonso-6b5a466a" target="_blank">
+                                            <img src="<?php echo get_template_directory_uri() ?>/images/linkedin.png" srcset="<?php echo get_template_directory_uri() ?>/images/linkedin.png 1x, <?php echo get_template_directory_uri() ?>/images/linkedin@2x.png 2x" alt="linkedIn">
+                                        </a>
+                                        <a href="https://github.com/JoelAlphonso" target="_blank">
+
+                                            <img src="<?php echo get_template_directory_uri() ?>/images/github.png" alt="github" srcset="<?php echo get_template_directory_uri() ?>/images/github.png 1x, <?php echo get_template_directory_uri() ?>/images/github@2x.png 2x" alt="facebook">
+                                        </a>
+
+                                        <a href="https://fr.pinterest.com/joelalphonso/" target="_blank">
+                                            <img src="<?php echo get_template_directory_uri() ?>/images/pinterest.png" srcset="<?php echo get_template_directory_uri() ?>/images/pinterest.png 1x, <?php echo get_template_directory_uri() ?>/images/pinterest@2x.png 2x" alt="pinterest">
+                                        </a>
+                                        <a href="https://www.facebook.com/joel.alphonso1" target="_blank"
+                                                ><img src="<?php echo get_template_directory_uri() ?>/images/facebook.png" srcset="<?php echo get_template_directory_uri() ?>/images/facebook.png 1x, <?php echo get_template_directory_uri() ?>/images/facebook@2x.png 2x" alt="facebook">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
