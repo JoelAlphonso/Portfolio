@@ -155,6 +155,10 @@ div.vWrapperDesktop {
   @include font-size(30);
 }
 
+.overflowhidden{
+  overflow: hidden;
+}
+
 /* --------------------------
 Header
 -------------------------- */
@@ -257,12 +261,14 @@ overlay
   max-width: 90%;
   background-color: $light-bg;
   position: relative;
+  @include flex(1 1 auto);
 }
 
 .overlayContent > span.overlayExit {
   width: 36px;
   height: 36px;
   position: absolute;
+  z-index: 10;
   background-color: $main-color;
   top: 0;
   right: 0;

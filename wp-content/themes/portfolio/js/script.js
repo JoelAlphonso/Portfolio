@@ -96,7 +96,9 @@ function showImage($image) {
 
     jQuery('.overlay').addClass('visible').removeClass('hidden');
 
-    jQuery('.overlayContent > .content').addClass('grow-off').html('<img src="' + $href + '" alt="popup image"/>');
+    jQuery('.overlayContent').addClass('grow-off');
+
+    jQuery('.overlayContent > .content').html('<img src="' + $href + '" alt="popup image"/>');
 
 }
 
@@ -108,7 +110,9 @@ function showVideo($image) {
 
     jQuery('.overlay').addClass('visible').removeClass('hidden');
 
-    jQuery('.overlayContent > .content').removeClass('grow-off').html('<div class="embed-container"><iframe src="' + $href + '" frameborder="0" allowfullscreen></iframe></div>');
+    jQuery('.overlayContent').removeClass('grow-off')
+
+    jQuery('.overlayContent > .content').html('<div class="embed-container"><iframe src="' + $href + '" frameborder="0" allowfullscreen></iframe></div>');
 
 }
 
@@ -127,9 +131,11 @@ function hideOverlay() {
 
 function disableScroll() {
     jQuery(document).smoothWheel({remove: "true"});
+    jQuery('body').addClass('overflowhidden');
 }
 
 function enableScroll() {
     jQuery(document).smoothWheel();
+    jQuery('body').addClass('overflowhidden');
 }
 
