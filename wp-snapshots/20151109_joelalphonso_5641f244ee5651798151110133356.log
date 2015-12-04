@@ -1,0 +1,76 @@
+********************************************************************************
+PACKAGE-LOG: 2015-11-10 13:34:38
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	0.5.34
+WORDPRESS:	4.3.1
+PHP INFO:	5.5.8 | SAPI: apache2handler
+SERVER:		Apache/2.4.7 (Win32) PHP/5.5.8 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 5000M (128M default) 
+MEMORY STACK: 22.5MB 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Not Supported 
+TABLES: total:20 | filtered:0 | create:20 
+FILTERED: [] 
+SQL CREATED: 20151109_joelalphonso_5641f244ee5651798151110133356_database.sql 
+file size:1118020 
+SQL FILE SIZE: 1.07MB 
+SQL FILE TIME: 2015-11-10 13:34:38 
+SQL RUNTIME: 0.16 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  C:/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/projects/Portfolio 
+ARCHIVE FILE: 20151109_joelalphonso_5641f244ee5651798151110133356_archive.zip 
+FILTERS: *OFF* 
+DIRS:  not set 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	79.55MB 
+STATS:	Dirs 559 | Files 4,460 
+SQL ADDED: 20151109_joelalphonso_5641f244ee5651798151110133356_database.sql 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 5019
+    [filename] => C:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\data\localweb\projects\Portfolio\wp-snapshots\tmp\20151109_joelalphonso_5641f244ee5651798151110133356_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 49.21MB 
+ARCHIVE RUNTIME: 10.28 sec. 
+MEMORY STACK: 24.75MB 
+
+******************************************************************************** 
+MAKE INSTALLER: 
+******************************************************************************** 
+Build Start 
+Build Finished 
+Preping for use 
+Template parsed with new data 
+Complete [C:/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/projects/Portfolio/wp-snapshots/tmp/20151109_joelalphonso_5641f244ee5651798151110133356_installer.php] 
+Added to archive 
+
+******************************************************************************** 
+INTEGRITY CHECKS: 
+******************************************************************************** 
+SQL File: 1.07MB 
+Installer File: 318.05KB 
+Archive File: 49.21MB  
+
+********************************************************************************
+RECORD ID:[2]
+TOTAL PROCESS RUNTIME: 10.80 sec.
+PEAK PHP MEMORY USED: 26.25MB
+DONE PROCESSING => 20151109_joelalphonso 2015-11-10 13:34:49
+ 

@@ -1,0 +1,407 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>jQuery CardSlider Plugin - V1.0.0</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="hkeyjun">
+	<meta name="copyright" content="hkeyjun">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2015-07-15T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#EEEEEE;color:#383838;}
+		::-moz-selection{background:#333636;color:#00DFFC;}
+		::selection{background:#333636;color:#00DFFC;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/css/img/logo.png);}
+		a{color:#008C9E;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #008C9E, #006673);
+			  background-image: -ms-linear-gradient(top, #008C9E, #006673);
+			  background-image: -webkit-gradient(linear, 0 0, 0 008C9E%, from(#343838), to(#006673));
+			  background-image: -webkit-linear-gradient(top, #008C9E, #006673);
+			  background-image: -o-linear-gradient(top, #008C9E, #006673);
+			  background-image: linear-gradient(top, #008C9E, #006673);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008C9E', endColorstr='#006673', GradientType=0);
+			  border-color: #006673 #006673 #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #008C9E #008C9E #bfbfbf;
+		  background-color: #006673;
+		}
+		hr{border-top:1px solid #D4D4D4;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#343838;color:#FFFFFF;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #494F4F;-moz-text-shadow:1px 1px 0px #494F4F;text-shadow:1px 1px 0px #494F4F;}
+		#documenter_sidebar ul{border-top:1px solid #212424;}
+		#documenter_sidebar ul a{border-top:1px solid #494F4F;border-bottom:1px solid #212424;color:#FFFFFF;}
+		#documenter_sidebar ul a:hover{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_sidebar ul a.current{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+
+		ol.linenums {
+			margin: 0;
+		}
+		#documenter_content .table {
+			background: #fafafa;
+			line-height: 1.8em;
+			width:100%;
+		}
+		#documenter_content .table td {
+			padding: 5px;
+			border: 1px solid #dbdbdb;
+		}
+		#documenter_content .table th {
+			padding: 8px 5px;
+			background: #fefefe;
+			border: 1px solid #dbdbdb;
+		}
+		strong {
+			color: #DD1144;
+			text-shadow: #fff 0px 1px 0px;
+			margin: auto 3px;
+		}
+	</style>
+	
+</head>
+<body class="documenter-project-jquery-cardslider-plugin">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#how_to_use" title="How To Use">How To Use</a></li>
+			<li><a href="#slider_options" title="Slider Options">Slider Options</a></li>
+			<li><a href="#api_reference" title="API Reference">API Reference</a></li>
+			<li><a href="#custom_slider" title="Custom Slider">Custom Slider</a></li>
+			<li><a href="#contact_me" title="Contact Me">Contact Me</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright hkeyjun 2015<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>jQuery CardSlider Plugin</h1>
+	<h2></h2>
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	
+	<li>latest update: 07/15/2015</li>
+	<li>by: hkeyjun</li>
+	<li>website: <a href="http://codecanyon.net/user/hkeyjun/portfolio">http://codecanyon.net/user/hkeyjun/portfolio</a></li>
+	<li>email: <a href="mailto:&#104;&#107;&#101;&#121;&#106;&#117;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#104;&#107;&#101;&#121;&#106;&#117;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></li>
+	</ul>
+	<p></p>
+	</section>
+	
+	<section id="how_to_use">
+	<div class="page-header"><h3>How To Use</h3><hr class="notop"></div>
+<h4 id="how_to_use_1_include_jquery_and_cardslider_files">1. Include jQuery and CardSlider files</h4>
+<p>
+	To use CardSlider, you&rsquo;ll need to include both jQuery&nbsp; and CardSlider file to your page.</p>
+<pre class="prettyprint lang-html linenums">
+&lt;!-- CardSlider stylesheet  --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/cardslider/cardslider.css&quot;/&gt;
+
+&lt;!-- jQuery library NOTE: do not need it,if your page already use jQuery  --&gt;
+&lt;script src=&quot;/cardslider/jquery-1.11.3.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- CardSlider script file --&gt;
+&lt;script src=&quot;/cardslider/jquery.cardslider.min.js&quot;&gt;&lt;/script&gt;
+</pre>
+<h4 id="how_to_use_2_set_up_the_markup">2. Set up the markup</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;div id=&quot;demoslider&quot; class=&quot;cardslider&quot;&gt;
+
+<code class="xml comments">    &lt;!-- first slide --&gt;</code>
+&nbsp;&nbsp;&nbsp; &lt;div class=&quot;cs-slide&quot;&gt;
+         &lt;div class=&quot;cs-description&quot;&gt;
+                 &lt;h2 class=&quot;cs-desc-title&quot;&gt;Item Title&lt;/h2&gt;
+                 &lt;div class=&quot;cs-desc-content&quot;&gt;
+                         &lt;!-- item description <code class="xml comments">contents goes here --&gt;</code>
+                 &lt;/div&gt;
+        &lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;cs-media&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href=&quot;#&quot; class=&quot;cs-media-item&quot;&gt;&lt;img src=&quot;images/1.jpg&quot; alt=&quot;&quot;/&gt;&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href=&quot;#&quot; class=&quot;cs-media-item&quot;&gt;&lt;img src=&quot;images/2.jpg&quot; alt=&quot;&quot;/&gt;&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+
+    <code class="xml comments">&lt;!-- second slide --&gt;
+    &lt;div class=&quot;cs-slide&quot;&gt;
+        &lt;!-- ... --&gt;
+    &lt;/div&gt; 
+    
+    &lt;!-- ...other slides --&gt;</code>
+&lt;/div&gt;
+</pre>
+<h4 id="how_to_use_3configuring_slides">3.Configuring slides</h4>
+<p>
+	You can configure slide effect by entering them in tow attributes called <strong>data-effect-in</strong> and <strong>data-effect-out</strong> on the slide element. There are six directions/effects that can be configured : &quot;<strong>left</strong>&quot; , &quot;<strong>right</strong>&quot; , &quot;<strong>top</strong>&quot;, &quot;<strong>bottom</strong>&quot;, &quot;<strong>up</strong>&quot;, &quot;<strong>down</strong>&quot;.</p>
+<p>
+	If the data-effect-in or data-effect-out attribute not be configured, CardSlider will randomly choose an effect at run time.</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div id=&quot;demoslider&quot; class=&quot;cardslider&quot;&gt;
+
+<code class="xml comments">    &lt;!-- first slide --&gt;</code>
+&nbsp;&nbsp;&nbsp; &lt;div class=&quot;cs-slide&quot; data-effect-in=&quot;left&quot; data-effect-out=&quot;right&quot;&gt;
+        &lt;!-- ... --&gt;
+&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+
+&lt;/div&gt;</pre>
+<p>
+	You can also configure the images&#39;s layout in row or column. By default , the image under .cs-media will be laid out in a column. You can lay out tow images in a row , by add class &quot;<strong>tow-in-row</strong>&quot;&nbsp; to .cs-media element like bellow:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div id=&quot;demoslider&quot; class=&quot;cardslider&quot;&gt;
+&nbsp;&nbsp;&nbsp; &lt;div class=&quot;cs-slide&quot;&gt;
+         &lt;div class=&quot;cs-description&quot;&gt;
+                 &lt;h2 class=&quot;cs-desc-title&quot;&gt;Item Title&lt;/h2&gt;
+                 &lt;div class=&quot;cs-desc-content&quot;&gt;
+                         &lt;!-- item description <code class="xml comments">contents goes here --&gt;</code>
+                 &lt;/div&gt;
+        &lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;cs-media <strong>tow-in-row</strong>&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href=&quot;#&quot; class=&quot;cs-media-item&quot;&gt;&lt;img src=&quot;images/1.jpg&quot; alt=&quot;&quot;/&gt;&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href=&quot;#&quot; class=&quot;cs-media-item&quot;&gt;&lt;img src=&quot;images/2.jpg&quot; alt=&quot;&quot;/&gt;&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+&nbsp;&nbsp;&nbsp; &lt;/div&gt;<code class="xml comments">
+    &lt;!-- ...other slides --&gt;</code>
+&lt;/div&gt;</pre>
+<p>
+	By default the skin of CardSlider is a &quot;dark-background&quot; skin , if you want use CardSlider with light background you can add class &quot;<strong>lightskin</strong>&quot; to the main CardSlider element.</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div id=&quot;demoslider&quot; class=&quot;cardslider <strong>lightskin</strong>&quot;&gt;
+    &lt;!-- ... --&gt;
+&lt;/div&gt;</pre>
+		<div class="alert alert-info">
+			NOTE: If you want to use the icons that i used in the lightskin demo , you need to include <a href="http://fortawesome.github.io/Font-Awesome/">fontawesome</a> to your page.Please add&nbsp; &lt;link rel=&quot;stylesheet&quot; href=&quot;//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css&quot;&gt;&nbsp;&nbsp; to your head tag.</div>
+
+<p>
+	And i had also prepared a css class: &quot;<strong>alternative-3d-style</strong>&quot; , add it to the main CardSlider element will make the images titled in another direction.</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div id=&quot;demoslider&quot; class=&quot;cardslider <strong>alternative-3d-style</strong>&quot;&gt;
+    &lt;!-- ... --&gt;
+&lt;/div&gt;</pre>
+<p>
+	&nbsp;</p>
+<h4 id="how_to_use_4initialize_the_plugin">4.Initialize the plugin</h4>
+<p>
+	Now you can initialize CardSlider&nbsp; like bellow.</p>
+<pre class="prettyprint lang-html linenums">
+&lt;script type=&quot;text/javascript&quot;&gt;
+    $(document).ready(function(){
+        $(&#39;#demoslider&#39;).cardSlider();
+    });
+&lt;/script&gt;</pre>
+<p>
+	You can customize CardSlider options like bellow:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;script type=&quot;text/javascript&quot;&gt;
+    $(document).ready(function(){
+        $(&#39;#demoslider&#39;).cardSlider({
+            autoPlay:true,
+            pauseOnHover:true,
+            interval:4000
+            // ...
+        });
+    });
+&lt;/script&gt;</pre>
+<p>
+	<a href="#" target="_self">Here </a>is a list of available slider options.</p>
+</section>
+<section id="slider_options">
+	<div class="page-header"><h3>Slider Options</h3><hr class="notop"></div>
+<table class="table">
+	<thead>
+		<tr>
+			<th scope="col">
+				Variable</th>
+			<th scope="col">
+				Default</th>
+			<th scope="col">
+				Type</th>
+			<th scope="col">
+				Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				autoPlay</td>
+			<td>
+				false</td>
+			<td>
+				boolean</td>
+			<td>
+				Slideshow will automatically start after pages have loaded.</td>
+		</tr>
+		<tr>
+			<td>
+				pauseOnHover</td>
+			<td>
+				true</td>
+			<td>
+				boolean</td>
+			<td>
+				Slideshow will temporally pause on mouse hover.</td>
+		</tr>
+		<tr>
+			<td>
+				interval</td>
+			<td>
+				5000</td>
+			<td>
+				integer</td>
+			<td>
+				The autoplay interval.</td>
+		</tr>
+		<tr>
+			<td>
+				nav</td>
+			<td>
+				true</td>
+			<td>
+				boolean</td>
+			<td>
+				Whether show Prev and Next buttons.</td>
+		</tr>
+		<tr>
+			<td>
+				dots</td>
+			<td>
+				true</td>
+			<td>
+				boolean</td>
+			<td>
+				Whether show dots navigation.</td>
+		</tr>
+		<tr>
+			<td>
+				shadow</td>
+			<td>
+				true</td>
+			<td>
+				boolean</td>
+			<td>
+				Disabling this option will hide the shadow of images.</td>
+		</tr>
+		<tr>
+			<td>
+				shadowAnimation</td>
+			<td>
+				true</td>
+			<td>
+				boolean</td>
+			<td>
+				Disabling this option will disable the shadow animation.</td>
+		</tr>
+	</tbody>
+</table>
+</section>
+<section id="api_reference">
+	<div class="page-header"><h3>API Reference</h3><hr class="notop"></div>
+<p>
+	The <strong>prev()</strong> and <strong>next()</strong> methods can be used to control sliders externally</p>
+<pre class="prettyprint lang-js linenums">
+//Init plugin
+$(&#39;#demoslider2&#39;).cardSlider();
+
+//Get CardSlider instance
+var cardSliderObj = $(&#39;#demoslider2&#39;).data(&#39;cardSlider&#39;);
+
+//Go to previous slide
+cardSliderObj.prev();
+
+//Go to next slide
+cardSliderObj.next();</pre>
+</section>
+<section id="custom_slider">
+	<div class="page-header"><h3>Custom Slider</h3><hr class="notop"></div>
+<h4 id="custom_slider_1_change_the_height_of_the_slider">1. Change the height of the slider.</h4>
+<p>
+	By default the height of CardSlider is setted to 600px. You can change it by add inline-style to the slider element like bellow:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div id=&quot;demoslider&quot; class=&quot;cardslider&quot; style=&quot;height:800px&quot;&gt;
+    &lt;!-- ... --&gt;
+&lt;/div&gt;</pre>
+<p>
+	Or configure it in you custom css file</p>
+<pre class="prettyprint lang-css linenums">
+#demoslider{
+    height:800px;
+}</pre>
+<p>
+	You can also change it by modify cardslider.css</p>
+<h4 id="custom_slider_2_set_height_of_cardslider_according_to_screen_size">2. Set height of CardSlider according to screen size.</h4>
+<p>
+	You can set the height of CardSlider use css media query, so it can have different heights according to screen size.</p>
+<p>
+	Like bellow:</p>
+<pre class="prettyprint lang-css linenums">
+/* Default height for screen under 768px*/
+#demoslider{
+&nbsp;&nbsp;&nbsp; height:400px;
+}
+/* 768px and up */
+@media (min-width: 768px) {
+&nbsp;&nbsp;&nbsp; #demoslider{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; height:500px;
+&nbsp;&nbsp;&nbsp; }
+}
+
+/* 992px and up */
+@media (min-width: 992px) {
+&nbsp;&nbsp;&nbsp; #demoslider{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; height:600px;
+&nbsp;&nbsp;&nbsp; }
+}
+
+/* 1200px and up */
+@media (min-width: 1200px) {
+&nbsp;&nbsp;&nbsp; #demoslider{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; height:700px;
+&nbsp;&nbsp;&nbsp; }
+}
+</pre>
+</section>
+<section id="contact_me">
+	<div class="page-header"><h3>Contact Me</h3><hr class="notop"></div>
+<p>
+	Please contact me, if you have any problem on using CardSlider. Here is my email : <a href="mailto:&#104;&#107;&#101;&#121;&#106;&#117;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#104;&#107;&#101;&#121;&#106;&#117;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></p>
+</section>
+
+	</div>
+</body>
+</html>
