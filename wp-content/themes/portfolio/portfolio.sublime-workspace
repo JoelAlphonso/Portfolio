@@ -523,15 +523,15 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 126,
-				"line_ending": "Windows"
+				"buffer_size": 23433,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "footer.php",
 			"settings":
 			{
-				"buffer_size": 41,
+				"buffer_size": 42,
 				"line_ending": "Windows"
 			}
 		},
@@ -539,7 +539,7 @@
 			"file": "header.php",
 			"settings":
 			{
-				"buffer_size": 326,
+				"buffer_size": 342,
 				"line_ending": "Windows"
 			}
 		},
@@ -547,7 +547,7 @@
 			"file": "functions.php",
 			"settings":
 			{
-				"buffer_size": 671,
+				"buffer_size": 4037,
 				"line_ending": "Windows"
 			}
 		},
@@ -555,7 +555,7 @@
 			"file": "style.css",
 			"settings":
 			{
-				"buffer_size": 531,
+				"buffer_size": 22294,
 				"line_ending": "Windows"
 			}
 		},
@@ -563,7 +563,7 @@
 			"file": "scss/style.scss",
 			"settings":
 			{
-				"buffer_size": 562,
+				"buffer_size": 12114,
 				"line_ending": "Windows"
 			}
 		},
@@ -579,7 +579,7 @@
 			"file": "scss/mixins.scss",
 			"settings":
 			{
-				"buffer_size": 4835,
+				"buffer_size": 4836,
 				"line_ending": "Unix"
 			}
 		},
@@ -784,6 +784,7 @@
 	],
 	"file_history":
 	[
+		"/H/FLYJIN/Flyjin_FInal/page1.html",
 		"/C/Users/joel/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
 		"/C/Users/joel/Desktop/header.php",
 		"/C/Users/joel/Desktop/index.php",
@@ -910,8 +911,7 @@
 		"/C/Users/joel/AppData/Roaming/Sublime Text 3/Packages/SFTP/SFTP.sublime-settings",
 		"/C/Users/joel/.floorc.json",
 		"/C/Users/joel/AppData/Roaming/Sublime Text 3/Packages/User/View In Browser.sublime-settings",
-		"/C/Users/joel/AppData/Roaming/Sublime Text 3/Packages/View In Browser/View In Browser.sublime-settings",
-		"/C/Users/joel/AppData/Roaming/Sublime Text 3/Settings/SideBarEnhancements.json"
+		"/C/Users/joel/AppData/Roaming/Sublime Text 3/Packages/View In Browser/View In Browser.sublime-settings"
 	],
 	"find":
 	{
@@ -1053,15 +1053,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 126,
+						"buffer_size": 23433,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								126,
-								126
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1155,15 +1155,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 41,
+						"buffer_size": 42,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								41,
-								41
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1243,15 +1243,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 326,
+						"buffer_size": 342,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								296,
-								296
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1332,15 +1332,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 671,
+						"buffer_size": 4037,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								156,
-								156
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1428,15 +1428,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 531,
+						"buffer_size": 22294,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								326,
-								326
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1529,15 +1529,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 562,
+						"buffer_size": 12114,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								465,
-								465
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1721,15 +1721,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4835,
+						"buffer_size": 4836,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								681,
-								681
+								0,
+								0
 							]
 						],
 						"settings":

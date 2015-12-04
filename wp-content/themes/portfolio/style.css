@@ -72,11 +72,14 @@ Default style
 -------------------------- */
 body {
   background: #fafafa;
+  position: relative;
+  height: 100vh;
 }
-@media (min-width: 37.5em) {
-  body {
-    overflow: hidden !important;
-  }
+
+p {
+  font-family: "Merlo-Medium", sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 h1 {
@@ -89,18 +92,28 @@ h1 {
 
 h2 {
   font-family: "Estandar-Bold", sans-serif;
-  color: white;
   font-size: 36px;
   font-size: 2.25rem;
-  text-transform: uppercase;
+  color: #363636;
+}
+
+a {
+  font-family: "Merlo-Medium", sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: normal;
+  color: #cc3030;
+  text-decoration: none;
 }
 
 a.btn, a.btnLight {
   border: 2px solid;
-  padding: 0.5rem 3rem;
+  padding: 1rem 3rem;
   font-family: "Estandar-ExtraLight", sans-serif;
   display: inline-block;
   text-decoration: none;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 a.btnLight {
@@ -111,13 +124,9 @@ a.btnLight {
 /* --------------------------
 Global Style
 -------------------------- */
-.fH-section, section.hero, div.vWrapper, div#fullpage > section:nth-child(1) div.vWrapper > ul, div#fullpage > section:nth-child(1) div.vWrapper > ul > li {
+.fH-section, section.hero, div.vWrapper, div#fullpage > section:nth-child(1), div#fullpage > section:nth-child(1) div.vWrapper > ul, div#fullpage > section:nth-child(1) div.vWrapper > ul > li {
   height: 100vh;
-}
-@media (min-width: 37.5em) {
-  .fH-section, section.hero, div.vWrapper, div#fullpage > section:nth-child(1) div.vWrapper > ul, div#fullpage > section:nth-child(1) div.vWrapper > ul > li {
-    height: 100%;
-  }
+  position: relative;
 }
 
 .flexRow {
@@ -198,6 +207,33 @@ Global Style
   flex: 1 1 auto;
 }
 
+.flexCenter, div#fullpage > section:nth-child(2) .content {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+}
+
+div.vWrapperDesktop {
+  position: relative;
+}
+@media (min-width: 37.5em) {
+  div.vWrapperDesktop {
+    height: 100vh;
+  }
+}
+
 .content-window {
   width: 100%;
   height: 100%;
@@ -212,9 +248,239 @@ Global Style
   height: 100%;
 }
 
+.sectionH2, div#fullpage > section:nth-child(3) h2, div#fullpage > section:nth-child(6) h2 {
+  margin: 0 0 90px 8.5%;
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+
+.overflowhidden {
+  overflow: hidden;
+}
+
+/* --------------------------
+Header
+-------------------------- */
+header.cd-header, header.cd-header.is-visible, header.cd-header.is-fixed, header.cd-header.menu-is-open {
+  background: none;
+  box-shadow: none;
+}
+
+.cd-logo > img {
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  width: 40px;
+  opacity: 0;
+}
+@media (min-width: 50em) {
+  .cd-logo > img {
+    width: 64px;
+  }
+}
+
+header.cd-header.extended, header.cd-header.is-visible.extended, header.cd-header.is-fixed.extended, header.cd-header.menu-is-open.extended {
+  background: rgba(204, 48, 48, 0.9);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+header.cd-header.extended .cd-logo > img, header.cd-header.is-visible.extended .cd-logo > img, header.cd-header.is-fixed.extended .cd-logo > img, header.cd-header.menu-is-open.extended .cd-logo > img {
+  opacity: 1;
+}
+
+.cd-primary-nav a {
+  color: white;
+  font-family: "Merlo-Medium", sans-serif;
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+
+.cd-primary-nav a:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.cd-primary-nav .cd-label {
+  color: #363636;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-family: "Merlo-Medium", sans-serif;
+}
+
+/* --------------------------
+overlay
+-------------------------- */
+.overlay {
+  overflow: auto;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 10;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  opacity: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.overlay > div.overlayOverflow {
+  max-height: 100%;
+  overflow: auto;
+  width: 100%;
+}
+.overlay > div.overlayExit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.overlay.hidden {
+  visibility: hidden;
+}
+
+.overlay.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.overlayContent {
+  max-height: 90%;
+  max-width: 90%;
+  background-color: #fafafa;
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -moz-box-flex: 1;
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.overlayContent > span.overlayExit {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  z-index: 10;
+  background-color: #cc3030;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.overlayContent > span.overlayExit:hover > span > span {
+  height: 15px;
+  width: 2px;
+}
+
+.overlayContent > span.overlayExit > span {
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.overlayContent > span.overlayExit > span > span {
+  height: 2px;
+  width: 15px;
+  background-color: #fafafa;
+  display: block;
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: height 0.3s, width 0.3s;
+  -moz-transition: height 0.3s, width 0.3s;
+  -ms-transition: height 0.3s, width 0.3s;
+  -o-transition: height 0.3s, width 0.3s;
+  transition: height 0.3s, width 0.3s;
+}
+.overlayContent > span.overlayExit > span:last-of-type > span {
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.overlayContent > .content > * {
+  max-width: 100%;
+  display: block;
+}
+
+.grow-off {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -moz-box-flex: 0;
+  -moz-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  max-height: inherit;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* --------------------------
 1st section
 -------------------------- */
+div#fullpage > section:nth-child(1) h2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+@media (min-width: 37.5em) {
+  div#fullpage > section:nth-child(1) h2 {
+    font-size: 36px;
+    font-size: 2.25rem;
+  }
+}
+div#fullpage > section:nth-child(1) h2.creative {
+  font-family: "Bonbon", sans-serif;
+  text-transform: none;
+  font-size: 28px;
+  font-size: 1.75rem;
+}
+@media (min-width: 37.5em) {
+  div#fullpage > section:nth-child(1) h2.creative {
+    font-size: 42px;
+    font-size: 2.625rem;
+  }
+}
 div#fullpage > section:nth-child(1) div.vWrapper {
   background: #2f2f2f;
 }
@@ -271,6 +537,30 @@ div#fullpage > section:nth-child(1) ul#scene .symbol {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+div#fullpage > section:nth-child(1) ul#scene .layer[data-depth="0.3"],
+div#fullpage > section:nth-child(1) ul#scene .layer[data-depth="0.4"],
+div#fullpage > section:nth-child(1) ul#scene .layer[data-depth="0.5"],
+div#fullpage > section:nth-child(1) ul#scene .layer[data-depth="0.6"] {
+  display: none !important;
+}
+@media (min-width: 37.5em) {
+  div#fullpage > section:nth-child(1) ul#scene .layer[data-depth="0.3"],
+  div#fullpage > section:nth-child(1) ul#scene .layer[data-depth="0.4"],
+  div#fullpage > section:nth-child(1) ul#scene .layer[data-depth="0.5"],
+  div#fullpage > section:nth-child(1) ul#scene .layer[data-depth="0.6"] {
+    display: inherit !important;
+  }
+}
+div#fullpage > section:nth-child(1) ul#scene .layer[data-depth="0.3"],
+div#fullpage > section:nth-child(1) ul#scene .layer[data-depth="0.4"] {
+  display: none !important;
+}
+@media (min-width: 50em) {
+  div#fullpage > section:nth-child(1) ul#scene .layer[data-depth="0.3"],
+  div#fullpage > section:nth-child(1) ul#scene .layer[data-depth="0.4"] {
+    display: inherit !important;
+  }
+}
 
 /* --------------------------
 2nd section
@@ -289,34 +579,32 @@ div#fullpage > section:nth-child(2) div[data-type="background"] {
     background-size: cover;
   }
 }
-div#fullpage > section:nth-child(2) .upperSection {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 0;
-  -moz-box-flex: 1;
-  -moz-flex: 1 1 0;
-  -ms-flex: 1 1 0;
-  flex: 1 1 0;
-}
-div#fullpage > section:nth-child(2) .underSection {
-  -webkit-box-flex: 2;
-  -webkit-flex: 2 1 0;
-  -moz-box-flex: 2;
-  -moz-flex: 2 1 0;
-  -ms-flex: 2 1 0;
-  flex: 2 1 0;
-  background: #cc3030;
-}
 div#fullpage > section:nth-child(2) .myFace {
   position: absolute;
   top: -15px;
   left: 50%;
   transform: translate(-50%, -50%);
+  max-width: 50%;
 }
-div#fullpage > section:nth-child(2) .underSection > div {
+div#fullpage > section:nth-child(2) .content {
+  width: 100%;
+  background: #cc3030;
   position: relative;
+  text-align: center;
+  margin-top: 250px;
+  vertical-align: middle;
 }
-div#fullpage > section:nth-child(2) .underSection > div > div > * {
-  margin: 2.5rem 0;
+@media (min-width: 37.5em) {
+  div#fullpage > section:nth-child(2) .content {
+    margin-top: 30vh;
+    height: 70%;
+  }
+}
+div#fullpage > section:nth-child(2) .content > div.presentation {
+  margin: 200px 0;
+}
+div#fullpage > section:nth-child(2) .content > div.presentation > * {
+  margin: 25px 0;
 }
 div#fullpage > section:nth-child(2) p {
   font-family: "Estandar-SemiBold", sans-serif;
@@ -331,6 +619,586 @@ div#fullpage > section:nth-child(2) div.presentation > .flexResponsiveRow span {
 @media (min-width: 37.5em) {
   div#fullpage > section:nth-child(2) div.presentation > .flexResponsiveRow span {
     display: initial;
+  }
+}
+
+/* --------------------------
+3rd section
+-------------------------- */
+div#fullpage > section:nth-child(3) {
+  color: #363636;
+}
+div#fullpage > section:nth-child(3) h2 {
+  margin-left: 17%;
+  margin-bottom: 50px;
+}
+div#fullpage > section:nth-child(3) .vWrapperDesktop {
+  height: auto;
+}
+@media (min-width: 50em) {
+  div#fullpage > section:nth-child(3) .vWrapperDesktop {
+    height: 100vh;
+  }
+}
+div#fullpage > section:nth-child(3) .upperSection {
+  width: 100%;
+  padding: 75px 0 150px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+div#fullpage > section:nth-child(3) .upperSection p {
+  margin: 40px 17% 40px 17%;
+  line-height: 1.5rem;
+}
+@media (min-width: 64.375em) {
+  div#fullpage > section:nth-child(3) .upperSection p {
+    margin: 40px 0 40px 34%;
+  }
+}
+@media (min-width: 50em) {
+  div#fullpage > section:nth-child(3) .upperSection {
+    height: 70%;
+  }
+}
+div#fullpage > section:nth-child(3) .upperSection > .flexRow {
+  height: 100%;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+@media (min-width: 64.375em) {
+  div#fullpage > section:nth-child(3) .upperSection > .flexRow {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+div#fullpage > section:nth-child(3) .upperSection > .flexRow > div:first-of-type {
+  text-align: left;
+}
+@media (min-width: 64.375em) {
+  div#fullpage > section:nth-child(3) .upperSection > .flexRow > div:first-of-type {
+    width: 50%;
+  }
+}
+@media (min-width: 64.375em) {
+  div#fullpage > section:nth-child(3) .upperSection > .flexRow > div:last-of-type {
+    width: 50%;
+  }
+}
+div#fullpage > section:nth-child(3) .upperSection .compContainer {
+  flex: 0 0 auto;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+div#fullpage > section:nth-child(3) .upperSection .designComp, div#fullpage > section:nth-child(3) .upperSection .progComp {
+  text-align: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 20px 17%;
+  height: 100%;
+}
+div#fullpage > section:nth-child(3) .upperSection .designComp > .flexRow, div#fullpage > section:nth-child(3) .upperSection .progComp > .flexRow {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  align-items: stretch;
+}
+div#fullpage > section:nth-child(3) .upperSection .designComp > .flexRow > .flexCol:first-of-type {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  align-items: flex-end;
+}
+div#fullpage > section:nth-child(3) .upperSection .designComp > .flexRow > .flexCol:last-of-type {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  align-items: flex-start;
+}
+div#fullpage > section:nth-child(3) .upperSection .progComp > .flexRow .flexCol:first-of-type,
+div#fullpage > section:nth-child(3) .upperSection .designComp > .flexRow .flexCol:first-of-type {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  align-items: flex-end;
+}
+div#fullpage > section:nth-child(3) .upperSection .progComp > .flexRow .flexCol:last-of-type,
+div#fullpage > section:nth-child(3) .upperSection .designComp > .flexRow .flexCol:last-of-type {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  align-items: flex-start;
+}
+div#fullpage > section:nth-child(3) .upperSection .progComp > .flexRow .flexCol .sStatContainer,
+div#fullpage > section:nth-child(3) .upperSection .designComp > .flexRow .flexCol .sStatContainer {
+  text-align: left;
+}
+div#fullpage > section:nth-child(3) .upperSection .progComp > .flexRow > .flexCol:first-of-type,
+div#fullpage > section:nth-child(3) .upperSection .designComp > .flexRow > .flexCol:first-of-type {
+  width: 50%;
+  height: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  -moz-box-flex: 1;
+  -moz-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+div#fullpage > section:nth-child(3) .upperSection .progComp > .flexRow,
+div#fullpage > section:nth-child(3) .upperSection .designComp > .flexRow {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  justify-content: flex-start;
+}
+div#fullpage > section:nth-child(3) .upperSection .designComp p, div#fullpage > section:nth-child(3) .upperSection .progComp p {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  font-family: "Estandar-Bold", sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  margin: 0 15px;
+}
+div#fullpage > section:nth-child(3) .upperSection .designComp p {
+  color: #cc3030;
+}
+div#fullpage > section:nth-child(3) .upperSection .designComp {
+  text-align: right;
+}
+div#fullpage > section:nth-child(3) .underSection {
+  background: #cc3030;
+  width: 100%;
+}
+div#fullpage > section:nth-child(3) .underSection p {
+  color: white;
+  font-family: "Estandar-ExtraLight", sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+@media (min-width: 50em) {
+  div#fullpage > section:nth-child(3) .underSection {
+    height: 30%;
+  }
+}
+div#fullpage > section:nth-child(3) .underSection .flexCol {
+  position: relative;
+  min-height: 250px;
+}
+div#fullpage > section:nth-child(3) .underSection .flexCol img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+div#fullpage > section:nth-child(3) .statContainer, div#fullpage > section:nth-child(3) .cStatContainer, div#fullpage > section:nth-child(3) .sStatContainer {
+  width: 125px;
+  display: inline-block;
+}
+div#fullpage > section:nth-child(3) .cStatContainer {
+  text-align: left;
+}
+div#fullpage > section:nth-child(3) .cStatContainer span {
+  background-color: #cc3030;
+  border-radius: 50%;
+}
+div#fullpage > section:nth-child(3) .sStatContainer span {
+  background-color: #2f2f2f;
+}
+div#fullpage > section:nth-child(3) .statOverflow {
+  overflow: hidden;
+  width: 100%;
+  display: inline-block;
+  height: 15px;
+  position: relative;
+}
+div#fullpage > section:nth-child(3) .statOverflow > div {
+  width: 125px;
+  position: absolute;
+}
+div#fullpage > section:nth-child(3) .statOverflow span {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+/* --------------------------
+4th section
+-------------------------- */
+div#fullpage > section:nth-child(4) #projectsSlider p {
+  line-height: normal;
+  width: 100%;
+}
+div#fullpage > section:nth-child(4) #projectsSlider h2 {
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+div#fullpage > section:nth-child(4) #projectsSlider h2 span {
+  display: inline-block;
+  line-height: 1.875rem;
+  padding: 0 10px;
+  border-right: 10px solid #363636;
+  border-left: 3px solid #363636;
+  font-family: "Estandar-ExtraLight", sans-serif;
+}
+div#fullpage > section:nth-child(4) #projectsSlider .cs-description {
+  padding-left: 8.5%;
+}
+@media (min-width: 50em) {
+  div#fullpage > section:nth-child(4) #projectsSlider .cs-description {
+    position: absolute;
+  }
+}
+div#fullpage > section:nth-child(4) #projectsSlider .cs-desc-content {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid #363636;
+}
+div#fullpage > section:nth-child(4) #projectsSlider .cs-desc-content .flexRow {
+  margin-bottom: 20px;
+}
+div#fullpage > section:nth-child(4) #projectsSlider .cs-desc-content .flexCol {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  justify-content: flex-start;
+}
+div#fullpage > section:nth-child(4) #projectsSlider .cs-desc-content > .flexRow > .flexCol:first-of-type {
+  flex: 0 0 80px;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  align-items: flex-end;
+}
+div#fullpage > section:nth-child(4) #projectsSlider .cs-desc-content > .flexRow > .flexCol:first-of-type p {
+  font-family: "Estandar-Bold", sans-serif;
+  text-transform: uppercase;
+  width: auto;
+}
+div#fullpage > section:nth-child(4) #projectsSlider .cs-desc-content > .flexRow > .flexCol:last-of-type {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 20px;
+}
+div#fullpage > section:nth-child(4) #projectsSlider .cs-desc-content a.btnProjet {
+  display: block;
+  background-color: #cc3030;
+  text-align: center;
+  font-family: "Estandar-ExtraLight", sans-serif;
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  margin-top: 40px;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+@media (min-width: 50em) {
+  div#fullpage > section:nth-child(4) #projectsSlider .cs-media {
+    position: absolute;
+  }
+}
+div#fullpage > section:nth-child(4) #projectsSlider .cs-media .mobileSize {
+  width: 11%;
+}
+div#fullpage > section:nth-child(4) #projectsSlider .cs-media .ipadSize {
+  width: 22%;
+}
+div#fullpage > section:nth-child(4) #projectsSlider .cs-dots > a > span {
+  background-color: rgba(1, 1, 1, 0.5);
+  border: none;
+  box-shadow: none;
+  width: 15px;
+  height: 15px;
+}
+div#fullpage > section:nth-child(4) #projectsSlider .cs-dots > a.cs-dot-active > span {
+  background-color: rgba(1, 1, 1, 0.8);
+}
+
+/* --------------------------
+5th section
+-------------------------- */
+div#fullpage > section:nth-child(5) .flexCol {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  height: 100%;
+  background: #cc3030;
+}
+div#fullpage > section:nth-child(5) .flexCol > div {
+  padding: 7rem 0;
+}
+div#fullpage > section:nth-child(5) .flexCol p {
+  margin: 2rem;
+  font-family: "Merlo-Light", sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  color: white;
+}
+@media (min-width: 37.5em) {
+  div#fullpage > section:nth-child(5) .flexCol p {
+    font-size: 36px;
+    font-size: 2.25rem;
+  }
+}
+div#fullpage > section:nth-child(5) .flexCol p > span {
+  font-family: "Bonbon", serif;
+  font-size: 36px;
+  font-size: 2.25rem;
+  -webkit-font-variant-ligatures: common-ligatures;
+  font-variant-ligatures: common-ligatures;
+  -moz-font-feature-settings: "liga=1 clig=1";
+  -ms-font-feature-settings: "liga", "clig";
+  -webkit-font-feature-settings: "liga", "clig";
+  font-feature-settings: "liga", "clig";
+  word-spacing: 0.3rem;
+  line-height: 3rem;
+}
+@media (min-width: 37.5em) {
+  div#fullpage > section:nth-child(5) .flexCol p > span {
+    font-size: 48px;
+    font-size: 3rem;
+  }
+}
+
+/* --------------------------
+6th section
+-------------------------- */
+div#fullpage > section:nth-child(6) {
+  color: #363636;
+}
+div#fullpage > section:nth-child(6) .vWrapperDesktop {
+  height: initial;
+}
+@media (min-width: 64.375em) {
+  div#fullpage > section:nth-child(6) .vWrapperDesktop {
+    height: 100vh;
+  }
+}
+div#fullpage > section:nth-child(6) h2 {
+  margin-left: 0;
+  margin-bottom: 50px;
+}
+div#fullpage > section:nth-child(6) .upperSection {
+  width: 100%;
+  padding: 75px 0 75px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media (min-width: 37.5em) {
+  div#fullpage > section:nth-child(6) .upperSection {
+    height: 70%;
+  }
+}
+div#fullpage > section:nth-child(6) .upperSection > .flexRow {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+@media (min-width: 64.375em) {
+  div#fullpage > section:nth-child(6) .upperSection > .flexRow {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+div#fullpage > section:nth-child(6) .upperSection > .flexRow > div:first-of-type {
+  padding: 0 8.5% 0 8.5%;
+  text-align: left;
+}
+@media (min-width: 64.375em) {
+  div#fullpage > section:nth-child(6) .upperSection > .flexRow > div:first-of-type {
+    width: 60%;
+    border-right: 1px solid #363636;
+  }
+}
+div#fullpage > section:nth-child(6) .upperSection > .flexRow > div:last-of-type {
+  padding: 0 8.5% 0 8.5%;
+}
+@media (min-width: 64.375em) {
+  div#fullpage > section:nth-child(6) .upperSection > .flexRow > div:last-of-type {
+    width: 40%;
+    padding: 0 8.5% 0 2.5%;
+  }
+}
+div#fullpage > section:nth-child(6) .upperSection > .flexRow > div:last-of-type > div {
+  padding-top: 25px;
+  margin-top: 25px;
+  border-top: 1px solid #343434;
+}
+@media (min-width: 64.375em) {
+  div#fullpage > section:nth-child(6) .upperSection > .flexRow > div:last-of-type > div {
+    padding-top: 0;
+    margin-top: 0;
+    border-top: none;
+  }
+}
+div#fullpage > section:nth-child(6) .upperSection > .flexRow > div:last-of-type > div > div.flexRow {
+  height: auto;
+}
+div#fullpage > section:nth-child(6) .upperSection > .flexRow > div:last-of-type .flexRow > .flexCol {
+  margin: 0 10px;
+}
+div#fullpage > section:nth-child(6) .upperSection > .flexRow > div:last-of-type .flexRow > .flexCol:first-of-type {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  align-items: flex-end;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 25%;
+  -moz-box-flex: 1;
+  -moz-flex: 1 1 25%;
+  -ms-flex: 1 1 25%;
+  flex: 1 1 25%;
+}
+div#fullpage > section:nth-child(6) .upperSection > .flexRow > div:last-of-type .flexRow > .flexCol:last-of-type {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  align-items: flex-start;
+}
+div#fullpage > section:nth-child(6) .upperSection > .flexRow > div:last-of-type .flexRow > .flexCol * {
+  margin: 10px 0;
+}
+div#fullpage > section:nth-child(6) .upperSection > .flexRow > div:last-of-type .flexRow > .flexCol h3 {
+  margin-bottom: 50px;
+  font-family: "Estandar-ExtraLight", sans-serif;
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+div#fullpage > section:nth-child(6) .upperSection > .flexRow > div:last-of-type .flexRow > .flexCol span {
+  font-family: "Estandar-Bold", sans-serif;
+  text-transform: uppercase;
+}
+div#fullpage > section:nth-child(6) .upperSection > .flexRow > div:last-of-type .flexRow > .flexCol hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #363636;
+}
+div#fullpage > section:nth-child(6) div.formContainer {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+div#fullpage > section:nth-child(6) div.formContainer input[type="text"], div#fullpage > section:nth-child(6) div.formContainer textarea {
+  color: #363636;
+  font-family: "Merlo-Medium", sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+div#fullpage > section:nth-child(6) div.formContainer input[type="submit"] {
+  width: 50%;
+  float: right;
+  background-color: #cc3030;
+  color: white;
+  cursor: pointer;
+}
+div#fullpage > section:nth-child(6) div.formContainer .ninja-forms-field {
+  border: none;
+  background: #E3E3E3;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 8px;
+}
+div#fullpage > section:nth-child(6) div.formContainer .ninja-forms-field.placeholder {
+  color: #9c9c9c;
+}
+div#fullpage > section:nth-child(6) div.formContainer .ninja-forms-field:-moz-placeholder {
+  color: #9c9c9c;
+}
+div#fullpage > section:nth-child(6) div.formContainer .ninja-forms-field::-webkit-input-placeholder {
+  color: #9c9c9c;
+}
+div#fullpage > section:nth-child(6) div.formContainer .ninja-forms-field:-ms-input-placeholder {
+  color: #9c9c9c;
+}
+div#fullpage > section:nth-child(6) .underSection {
+  background: #cc3030;
+  width: 100%;
+}
+div#fullpage > section:nth-child(6) .underSection p {
+  color: white;
+  font-family: "Estandar-ExtraLight", sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+div#fullpage > section:nth-child(6) .underSection .flexRow > .flexCol > .flexRow {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  margin: 60px 0;
+}
+div#fullpage > section:nth-child(6) .underSection footer {
+  height: 40px;
+  line-height: 40px;
+  background: #992424;
+}
+@media (min-width: 37.5em) {
+  div#fullpage > section:nth-child(6) .underSection {
+    height: 30%;
   }
 }
 

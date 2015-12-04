@@ -27,9 +27,14 @@ Default style
 
 body {
   background: $light-bg;
-  @include breakpoint(small){
-    overflow: hidden !important;
-  }
+  //overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+p {
+  font-family: "Merlo-Medium", sans-serif;
+  @include font-size(14);
 }
 
 h1 {
@@ -42,17 +47,25 @@ h1 {
 
 h2 {
   font-family: "Estandar-Bold", sans-serif;
-  color: $light-txt;
   @include font-size(36);
-  text-transform: uppercase;
+  color: $dark-txt;
+}
+
+a {
+  font-family: "Merlo-Medium", sans-serif;
+  @include font-size(14);
+  line-height: normal;
+  color: $main-color;
+  text-decoration: none;
 }
 
 a.btn {
   border: 2px solid;
-  padding: 0.5rem 3rem;
+  padding: 1rem 3rem;
   font-family: "Estandar-ExtraLight", sans-serif;
   display: inline-block;
   text-decoration: none;
+  @include font-size(18);
 }
 
 a.btnLight {
@@ -66,10 +79,8 @@ Global Style
 -------------------------- */
 
 .fH-section {
-  @include breakpoint(small) {
-    height: 100%;
-  }
   height: 100vh;
+  position: relative;
 }
 
 .flexRow {
@@ -104,12 +115,25 @@ Global Style
   @include flex(1, 1, auto);
 }
 
+.flexCenter {
+  @include inline-flex();
+  @include align-items(center);
+  @include justify-content(center);
+}
+
 section.hero {
   @extend .fH-section;
 }
 
 div.vWrapper {
   @extend .fH-section;
+}
+
+div.vWrapperDesktop {
+  @include breakpoint(small) {
+    height: 100vh;
+  }
+  position: relative;
 }
 
 .content-window {
@@ -126,11 +150,213 @@ div.vWrapper {
   height: 100%;
 }
 
+.sectionH2 {
+  margin: 0 0 90px 8.5%;
+  @include font-size(30);
+}
+
+.overflowhidden{
+  overflow: hidden;
+}
+
+/* --------------------------
+Header
+-------------------------- */
+
+header.cd-header, header.cd-header.is-visible, header.cd-header.is-fixed, header.cd-header.menu-is-open {
+  background: none;
+  box-shadow: none;
+}
+
+.cd-logo > img {
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  width: 40px;
+
+  @include breakpoint(medium) {
+    width: 64px;
+  }
+
+  opacity: 0;
+}
+
+header.cd-header.extended, header.cd-header.is-visible.extended, header.cd-header.is-fixed.extended, header.cd-header.menu-is-open.extended {
+  background: rgba(204, 48, 48, 0.9);
+
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);;
+
+  .cd-logo > img {
+    opacity: 1;
+
+  }
+}
+
+.cd-primary-nav a {
+  color: $light-txt;
+  font-family: "Merlo-Medium", sans-serif;
+  @include font-size(30);
+}
+
+.cd-primary-nav a:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.cd-primary-nav .cd-label {
+  color: $dark-txt;
+  @include font-size(18);
+  font-family: "Merlo-Medium", sans-serif;
+}
+
+/* --------------------------
+overlay
+-------------------------- */
+
+.overlay {
+  overflow: auto;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 10;
+  @include justify-content(center);
+  @include align-items(center);
+  opacity: 0;
+  @include flexbox;
+
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+
+  > div.overlayOverflow {
+    max-height: 100%;
+    overflow: auto;
+    width: 100%;
+  }
+
+  > div.overlayExit {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+.overlay.hidden {
+  visibility: hidden;
+}
+
+.overlay.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.overlayContent {
+  max-height: 90%;
+  max-width: 90%;
+  background-color: $light-bg;
+  position: relative;
+  @include flex(1 1 auto);
+}
+
+.overlayContent > span.overlayExit {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  z-index: 10;
+  background-color: $main-color;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  &:hover > span > span {
+    height: 15px;
+    width: 2px;
+  }
+}
+
+.overlayContent > span.overlayExit > span {
+
+  @include translate(-50%, -50%);
+
+  > span {
+    height: 2px;
+    width: 15px;
+    background-color: $light-bg;
+    display: block;
+    @include rotate(45);
+    -webkit-transition: height 0.3s, width 0.3s;
+    -moz-transition: height 0.3s, width 0.3s;
+    -ms-transition: height 0.3s, width 0.3s;
+    -o-transition: height 0.3s, width 0.3s;
+    transition: height 0.3s, width 0.3s;
+  }
+
+  &:last-of-type > span {
+    @include rotate(-45);
+  }
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.overlayContent > .content > * {
+  max-width: 100%;
+  display: block;
+}
+
+.grow-off {
+  @include flex(0 1 auto);
+  max-height: inherit;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* --------------------------
 1st section
 -------------------------- */
 
 div#fullpage > section:nth-child(1) {
+
+  @extend .fH-section;
+
+  h2 {
+    color: $light-txt;
+    text-transform: uppercase;
+    @include font-size(24);
+    @include breakpoint(small){
+      @include font-size(36);
+    }
+
+    &.creative{
+      font-family: "Bonbon", sans-serif;
+      text-transform: none;
+      @include font-size(28);
+      @include breakpoint(small){
+        @include font-size(42);
+      }
+    }
+
+  }
 
   div.vWrapper {
     background: $dark-bg;
@@ -200,6 +426,31 @@ div#fullpage > section:nth-child(1) {
       -o-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
     }
+
+    .layer[data-depth="0.3"],
+    .layer[data-depth="0.4"],
+    .layer[data-depth="0.5"],
+    .layer[data-depth="0.6"]{
+
+      display: none!important;
+
+      @include breakpoint(small){
+        display: inherit!important;
+      }
+
+    }
+
+    .layer[data-depth="0.3"],
+    .layer[data-depth="0.4"]{
+
+      display: none!important;
+
+      @include breakpoint(medium){
+        display: inherit!important;
+      }
+
+    }
+
   }
 
 }
@@ -218,28 +469,34 @@ div#fullpage > section:nth-child(2) {
     background-size: cover;
   }
 
-  .upperSection {
-    @include flex(1, 1, 0);
-  }
-
-  .underSection {
-    @include flex(2, 1, 0);
-    background: $main-color;
-  }
-
   .myFace {
     position: absolute;
     top: -15px;
     left: 50%;
     transform: translate(-50%, -50%);
+    max-width: 50%;
   }
 
-  .underSection > div {
+  .content {
+    @extend .flexCenter;
+    width: 100%;
+    background: $main-color;
     position: relative;
+    text-align: center;
+    @include breakpoint(small) {
+      margin-top: 30vh;
+      height: 70%;
+    }
+    margin-top: 250px;
+    vertical-align: middle;
   }
 
-  .underSection > div > div > * {
-    margin: 2.5rem 0;
+  .content > div.presentation {
+    margin: 200px 0;
+  }
+
+  .content > div.presentation > * {
+    margin: 25px 0;
   }
 
   p {
@@ -250,8 +507,8 @@ div#fullpage > section:nth-child(2) {
   div.presentation > .flexResponsiveRow {
     justify-content: center;
 
-    span{
-      @include breakpoint(small){
+    span {
+      @include breakpoint(small) {
         display: initial;
       }
 
@@ -261,6 +518,609 @@ div#fullpage > section:nth-child(2) {
 
   }
 
+}
+
+/* --------------------------
+3rd section
+-------------------------- */
+
+div#fullpage > section:nth-child(3) {
+
+  color: $dark-txt;
+
+  h2 {
+    @extend .sectionH2;
+    margin-left: 17%;
+    margin-bottom: 50px;
+  }
+
+  .vWrapperDesktop{
+
+    height: auto;
+
+    @include breakpoint(medium){
+      height: 100vh;
+    }
+  }
+
+  .upperSection {
+    width: 100%;
+
+    padding: 75px 0 150px 0;
+
+    p {
+      margin: 40px 17% 40px 17%;
+
+      @include breakpoint(large) {
+        margin: 40px 0 40px 34%;
+      }
+
+      line-height: 1.5rem;
+
+    }
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    @include breakpoint(medium) {
+      height: 70%;
+    }
+
+    > .flexRow {
+
+      height: 100%;
+
+      @include breakpoint(large) {
+        @include flex-direction(row);
+      }
+      @include flex-direction(column);
+      justify-content: flex-start;
+    }
+
+    > .flexRow > div:first-of-type {
+
+
+
+      @include breakpoint(large) {
+        width: 50%;
+      }
+      text-align: left;
+    }
+
+    > .flexRow > div:last-of-type {
+      @include breakpoint(large) {
+        width: 50%;
+      }
+
+
+
+    }
+
+    .compContainer {
+      flex: 0 0 auto;
+      @include flex-direction(column);
+
+      //@include breakpoint(small) {
+      //  @include flex-direction(row);
+      //}
+
+    }
+
+    .designComp, .progComp {
+      text-align: left;
+      @include flexbox();
+      @include justify-content(flex-start);
+      @include flex-direction(column);
+      margin: 20px 17%;
+      height: 100%;
+
+      //@include breakpoint(small) {
+      //  width: 50%;
+      //  margin: 0;
+      //}
+
+    }
+
+    .designComp > .flexRow, .progComp > .flexRow {
+      @include justify-content(flex-end);
+      @include align-items(stretch);
+    }
+
+    .designComp > .flexRow > .flexCol {
+
+      &:first-of-type{
+        @include align-items(flex-end);
+      }
+
+      &:last-of-type{
+        @include align-items(flex-start);
+      }
+
+
+
+    }
+
+    .designComp > .flexRow > .flexCol:last-of-type {
+      //width: inherit;
+    }
+
+    .progComp > .flexRow .flexCol,
+    .designComp > .flexRow .flexCol{
+
+      &:first-of-type{
+        @include align-items(flex-end);
+      }
+
+      &:last-of-type{
+        @include align-items(flex-start);
+      }
+
+      .sStatContainer{
+        text-align: left;
+      }
+
+    }
+
+    .progComp > .flexRow > .flexCol:first-of-type,
+    .designComp > .flexRow > .flexCol:first-of-type{
+      width: 50%;
+      height: 100%;
+      @include flex(1, 0, auto);
+    }
+
+    .progComp > .flexRow,
+    .designComp > .flexRow{
+      @include justify-content(flex-start);
+    }
+
+    .designComp p, .progComp p {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0;
+      font-family: "Estandar-Bold", sans-serif;
+      @include font-size(24);
+      margin: 0 15px;
+    }
+
+    .designComp p {
+      color: $main-color;
+    }
+
+    .designComp {
+      text-align: right;
+    }
+
+  }
+
+  .underSection {
+    background: $main-color;
+    width: 100%;
+
+    p {
+      color: $light-txt;
+      font-family: "Estandar-ExtraLight", sans-serif;
+      @include font-size(24);
+    }
+
+    @include breakpoint(medium) {
+      height: 30%;
+    }
+
+    .flexCol {
+      position: relative;
+
+      min-height: 250px;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+
+    }
+
+  }
+
+  .statContainer {
+    width: 125px;
+    display: inline-block;
+  }
+
+  .cStatContainer {
+    @extend .statContainer;
+
+    text-align: left;
+
+    .statOverflow > div {
+      //right: 0;
+    }
+
+    span {
+      background-color: $main-color;
+      border-radius: 50%;
+    }
+
+  }
+
+  .sStatContainer {
+    @extend .statContainer;
+
+    span {
+      background-color: $dark-bg;
+    }
+  }
+
+  .statOverflow {
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+    height: 15px;
+    position: relative;
+    > div {
+      width: 125px;
+      position: absolute;
+    }
+  }
+
+  .statOverflow span {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+}
+
+/* --------------------------
+4th section
+-------------------------- */
+
+div#fullpage > section:nth-child(4) {
+
+  //Slider
+  #projectsSlider {
+
+    p {
+      line-height: normal;
+      width: 100%;
+    }
+
+    h2 {
+      @include font-size(30);
+
+      span {
+        display: inline-block;
+        line-height: 1.875rem;
+        padding: 0 10px;
+        border-right: 10px solid $dark-txt;
+        border-left: 3px solid $dark-txt;
+        font-family: "Estandar-ExtraLight", sans-serif;
+      }
+
+    }
+
+    .cs-description {
+      padding-left: 8.5%;
+      //position: relative;
+
+      @include breakpoint(medium) {
+        position: absolute;
+      }
+
+    }
+
+    .cs-desc-content {
+
+      margin-top: 40px;
+      padding-top: 30px;
+      border-top: 1px solid $dark-txt;
+
+      .flexRow {
+        margin-bottom: 20px;
+      }
+
+      .flexCol {
+        @include justify-content(flex-start);
+      }
+
+      > .flexRow > .flexCol:first-of-type {
+        flex: 0 0 80px;
+        @include align-items(flex-end);
+
+        p {
+          font-family: "Estandar-Bold", sans-serif;
+          text-transform: uppercase;
+          width: auto;
+        }
+      }
+
+      > .flexRow > .flexCol:last-of-type {
+        @include align-items(flex-start);
+        text-align: left;
+        margin-left: 20px;
+      }
+
+      a.btnProjet {
+        display: block;
+        background-color: $main-color;
+        text-align: center;
+        font-family: "Estandar-ExtraLight", sans-serif;
+        color: $light-txt;
+        text-decoration: none;
+        padding: 10px 0;
+        margin-top: 40px;
+        @include font-size(18);
+      }
+
+    }
+
+    .cs-media {
+      //position: relative;
+
+      @include breakpoint(medium) {
+        position: absolute;
+      }
+
+      .mobileSize {
+        width: 11%;
+      }
+
+      .ipadSize {
+        width: 22%;
+      }
+
+    }
+
+    .cs-dots > a > span {
+      background-color: rgba(1, 1, 1, 0.5);
+      border: none;
+      box-shadow: none;
+      width: 15px;
+      height: 15px;
+    }
+
+    .cs-dots > a.cs-dot-active > span {
+      background-color: rgba(1, 1, 1, 0.8);
+    }
+
+    //hover pour dots
+    //border-radius: 50% 50% 50% 50%/65% 65% 35% 35%;
+
+  }
+
+}
+
+/* --------------------------
+5th section
+-------------------------- */
+
+div#fullpage > section:nth-child(5) {
+
+  .flexCol {
+    @include justify-content(center);
+    height: 100%;
+    background: $main-color;
+
+    > div {
+      padding: 7rem 0;
+    }
+
+    p {
+      margin: 2rem;
+      font-family: "Merlo-Light", sans-serif;
+      @include font-size(24);
+      color: $light-txt;
+
+      @include breakpoint(small) {
+        @include font-size(36);
+      }
+
+      > span {
+        font-family: "Bonbon", serif;
+        @include font-size(36);
+        -webkit-font-variant-ligatures: common-ligatures;
+        font-variant-ligatures: common-ligatures;
+        -moz-font-feature-settings: "liga=1 clig=1";
+        -ms-font-feature-settings: "liga", "clig";
+        -webkit-font-feature-settings: "liga", "clig";
+        font-feature-settings: "liga", "clig";
+        word-spacing: 0.3rem;
+        line-height: 3rem;
+
+        @include breakpoint(small) {
+          @include font-size(48);
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+/* --------------------------
+6th section
+-------------------------- */
+
+div#fullpage > section:nth-child(6) {
+
+  color: $dark-txt;
+
+  .vWrapperDesktop {
+    height: initial;
+
+    @include breakpoint(large) {
+      height: 100vh;
+    }
+
+  }
+
+  h2 {
+    @extend .sectionH2;
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+
+  .upperSection {
+    width: 100%;
+
+    padding: 75px 0 75px 0;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    @include breakpoint(small) {
+      height: 70%;
+    }
+
+    > .flexRow {
+      @include breakpoint(large) {
+        @include flex-direction(row);
+      }
+      @include flex-direction(column);
+      justify-content: flex-start;
+    }
+
+    > .flexRow > div:first-of-type {
+
+      @include breakpoint(large) {
+        width: 60%;
+        border-right: 1px solid $dark-txt;
+
+      }
+
+      padding: 0 8.5% 0 8.5%;
+
+      text-align: left;
+    }
+
+    > .flexRow > div:last-of-type {
+      @include breakpoint(large) {
+        width: 40%;
+        padding: 0 8.5% 0 2.5%;
+      }
+
+      padding: 0 8.5% 0 8.5%;
+
+      > div{
+        padding-top: 25px;
+        margin-top: 25px;
+        border-top: 1px solid #343434;
+
+        @include breakpoint(large){
+          padding-top: 0;
+          margin-top: 0;
+          border-top: none;
+        }
+
+        > div.flexRow{
+          height: auto;
+        }
+
+      }
+
+      .flexRow > .flexCol {
+
+        margin: 0 10px;
+
+        &:first-of-type {
+          @include align-items(flex-end);
+          @include flex(1 1 25%);
+        }
+
+        &:last-of-type {
+          @include align-items(flex-start);
+        }
+
+        * {
+          margin: 10px 0;
+        }
+
+        h3 {
+          margin-bottom: 50px;
+          font-family: "Estandar-ExtraLight", sans-serif;
+          @include font-size(30);
+        }
+
+        span {
+          font-family: "Estandar-Bold", sans-serif;
+          text-transform: uppercase;
+        }
+
+        hr {
+          width: 100%;
+          border: none;
+          border-top: 1px solid $dark-txt;
+        }
+
+      }
+
+    }
+
+  }
+
+  div.formContainer {
+
+    @include box-sizing(border-box);
+
+    input[type="text"], textarea {
+      color: $dark-txt;
+      font-family: "Merlo-Medium", sans-serif;
+      @include font-size(14);
+    }
+
+    input[type="submit"] {
+      width: 50%;
+      float: right;
+      background-color: $main-color;
+      color: $light-txt;
+      cursor: pointer;
+    }
+
+    .ninja-forms-field {
+      border: none;
+      background: #E3E3E3;
+      @include box-sizing(border-box);
+      padding: 8px;
+
+      @include placeholder-color(lighten($dark-txt, 40%));
+
+    }
+  }
+
+  .underSection {
+    background: $main-color;
+    width: 100%;
+
+    p {
+      color: $light-txt;
+      font-family: "Estandar-ExtraLight", sans-serif;
+      @include font-size(14);
+    }
+
+    .flexRow > .flexCol > .flexRow{
+      @include align-items(center);
+      margin: 60px 0;
+    }
+    
+    footer{
+      height: 40px;
+      line-height: 40px;
+      background: $sec-color;
+    }
+
+    @include breakpoint(small) {
+      height: 30%;
+    }
+  }
 }
 
 
