@@ -1,0 +1,2002 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fle",
+				"flex-direction($value: row)	 _flexbox.scss"
+			],
+			[
+				"m",
+				"main-color"
+			],
+			[
+				"flex",
+				"flex($fg: 1,  $fs: null,  $fb: null)	 _flexbox.scss"
+			],
+			[
+				"inc",
+				"inc	@include"
+			],
+			[
+				"ligh",
+				"light-bg"
+			],
+			[
+				"wp_enque",
+				"wp_enqueue_script"
+			],
+			[
+				"get_temp",
+				"get_template_directory_uri"
+			],
+			[
+				"wp_enqu",
+				"wp_enqueue_script"
+			],
+			[
+				"myMi",
+				"myMixin"
+			],
+			[
+				"bd",
+				"bd+	border: ${1:1px} ${2:solid} ${3:#000};"
+			],
+			[
+				"in",
+				"inc	@include"
+			],
+			[
+				"mixin",
+				"mix	@mixin"
+			],
+			[
+				"str",
+				"stretch"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"displ",
+				"display"
+			],
+			[
+				"flex-",
+				"flex-row	 style.css"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"tran",
+				"translateY()"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"spa",
+				"space-around"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"bg",
+				"bgGris	 style.css"
+			],
+			[
+				"fl",
+				"flex-row	 style.css"
+			],
+			[
+				"ba",
+				"background-position"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"bx",
+				"bxsh	box-shadow: ${1:inset }${2:hoff} ${3:voff} ${4:blur} ${5:color};"
+			],
+			[
+				"sp",
+				"space-between"
+			],
+			[
+				"j",
+				"justify-content"
+			],
+			[
+				"Es",
+				"Estandar-Bold"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"scroll",
+				"scroll	.scroll()"
+			],
+			[
+				"to",
+				"toggleClass	.toggleClass()"
+			],
+			[
+				"scr",
+				"scrollTop	.scrollTop()"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"t",
+				"translate()"
+			],
+			[
+				"tr",
+				"trf	transform"
+			],
+			[
+				"fade",
+				"fadeOut"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"trf",
+				"trf-ty	transform: translateY(${1:y});"
+			],
+			[
+				"trans",
+				"transform"
+			],
+			[
+				"cont",
+				"contain"
+			],
+			[
+				"fad",
+				"fadeOut	.fadeOut()"
+			],
+			[
+				"slideD",
+				"slideDown"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"anim",
+				"anim-	animation: ${1:name} ${2:duration} ${3:timing-function} ${4:delay} ${5:iteration-count} ${6:direction} ${7:fill-mode};"
+			],
+			[
+				"trf-r",
+				"trf-r	transform: rotate(${1:angle});"
+			],
+			[
+				"backg",
+				"background-position"
+			],
+			[
+				"backgroun",
+				"background-attachment"
+			],
+			[
+				"css",
+				"css	.css() - single"
+			],
+			[
+				"pa",
+				"pageNum"
+			],
+			[
+				"num",
+				"numOffset〔argument〕"
+			],
+			[
+				"pre_get",
+				"pre_get_posts"
+			],
+			[
+				"sta",
+				"startPage〔variable〕"
+			],
+			[
+				"scrit",
+				"script	Tag"
+			],
+			[
+				"add",
+				"addClass	.addClass()"
+			],
+			[
+				"scale",
+				"scaleY()"
+			],
+			[
+				"trs",
+				"trs	transition: ${1:prop} ${2:time};"
+			],
+			[
+				"r",
+				"rotate()"
+			],
+			[
+				"meta",
+				"$metakey〔variable〕"
+			],
+			[
+				"fil",
+				"filterArticleMeta〔class〕"
+			],
+			[
+				"this",
+				"$thisPost〔variable〕"
+			],
+			[
+				"the_",
+				"the_ID"
+			],
+			[
+				"the",
+				"the_ID"
+			],
+			[
+				"enqu",
+				"wp_enqueue_script"
+			],
+			[
+				"glo",
+				"global〔keyword〕"
+			],
+			[
+				"arg",
+				"$args2〔variable〕"
+			],
+			[
+				"query",
+				"query_posts"
+			],
+			[
+				"ease",
+				"ease-out"
+			],
+			[
+				"eas",
+				"ease-in-out"
+			],
+			[
+				"tra",
+				"translate3d()"
+			],
+			[
+				"box-",
+				"box-shadow"
+			],
+			[
+				"last",
+				"lastArticle〔variable〕"
+			],
+			[
+				"coll",
+				"collapsableToAdd"
+			],
+			[
+				"animate",
+				"animate	.animate()"
+			],
+			[
+				"filter",
+				"filterArticles"
+			],
+			[
+				"get_tem",
+				"get_template_part"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"cat",
+				"cat-blue	 style.css"
+			],
+			[
+				"cat-",
+				"cat-orange	 style.css"
+			],
+			[
+				"get_templ",
+				"get_template_part('loop"
+			],
+			[
+				"get",
+				"get_template_part"
+			],
+			[
+				"get_",
+				"get_the_ID"
+			],
+			[
+				"my",
+				"$my_query〔variable〕"
+			],
+			[
+				"WP_",
+				"WP_Query"
+			],
+			[
+				"endfor",
+				"endforeach〔keyword〕"
+			],
+			[
+				"end",
+				"endwhile〔keyword〕"
+			],
+			[
+				"have_",
+				"have_posts"
+			],
+			[
+				"WP",
+				"WP_Query	New WP_Query Class"
+			],
+			[
+				"bor",
+				"border-box"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"ab",
+				"absolute"
+			],
+			[
+				"f",
+				"first-of-type〔pseudo-class〕"
+			],
+			[
+				"background",
+				"background-color: 〔property〕"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"firs",
+				"first-of-type	 pseudo selector"
+			],
+			[
+				"contain",
+				"containerPadding〔variable〕"
+			],
+			[
+				"triandle",
+				"triangleWidth〔variable〕"
+			],
+			[
+				"outer",
+				"outerWidth〔function〕"
+			],
+			[
+				"offset",
+				"offset"
+			],
+			[
+				"off",
+				"offset	.offset()"
+			],
+			[
+				"removeC",
+				"removeCollapsable"
+			],
+			[
+				"fun",
+				"function〔keyword〕"
+			],
+			[
+				"extend",
+				"extendfull"
+			],
+			[
+				"slide",
+				"slideDown	.slideDown()"
+			],
+			[
+				"togg",
+				"toggle	.toggle() (show/hide)"
+			],
+			[
+				"insta",
+				"instancePoint"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"ex",
+				"extendfull	 style.css"
+			],
+			[
+				"ins",
+				"instancePoint"
+			],
+			[
+				"next",
+				"nextSib"
+			],
+			[
+				"sibling",
+				"next siblings〔function〕"
+			],
+			[
+				"ne",
+				"next siblings〔function〕"
+			],
+			[
+				"re",
+				"ready〔function〕"
+			],
+			[
+				"scri",
+				"script	Tag"
+			],
+			[
+				"translate",
+				"translateY()"
+			],
+			[
+				"background-",
+				"background-position"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"ini",
+				"initial"
+			],
+			[
+				"blo",
+				"block"
+			],
+			[
+				"ali",
+				"align-items"
+			],
+			[
+				"fon",
+				"font-size"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 23433,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "footer.php",
+			"settings":
+			{
+				"buffer_size": 42,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "header.php",
+			"settings":
+			{
+				"buffer_size": 342,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "functions.php",
+			"settings":
+			{
+				"buffer_size": 4037,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "style.css",
+			"settings":
+			{
+				"buffer_size": 22294,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scss/style.scss",
+			"settings":
+			{
+				"buffer_size": 12114,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scss/_flexbox.scss",
+			"settings":
+			{
+				"buffer_size": 11763,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/mixins.scss",
+			"settings":
+			{
+				"buffer_size": 4836,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"en",
+				"Package Control: Enable Package"
+			],
+			[
+				"mixin",
+				"Snippet: = Shortcut to @mixin"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"set",
+				"Set Syntax: SCSS"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"word",
+				"Snippet: WordPress File Header"
+			],
+			[
+				"a",
+				"Autoprefix CSS"
+			],
+			[
+				"au",
+				"Autoprefix CSS"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Enable Package"
+			],
+			[
+				"autopre",
+				"Autoprefix CSS"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"sftp",
+				"SFTP: Edit Server…"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"se",
+				"Set Syntax: CSS3"
+			],
+			[
+				"pa",
+				"Package Control: Enable Package"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"package",
+				"Package Control: Enable Package"
+			],
+			[
+				"packa",
+				"Package Control: Enable Package"
+			],
+			[
+				"sftpb",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"snipp",
+				"Snippet: Theme Head"
+			],
+			[
+				"wor",
+				"Snippet: WordPress File Header"
+			],
+			[
+				"packins",
+				"Package Control: Install Package"
+			],
+			[
+				"packin",
+				"Package Control: Install Package"
+			],
+			[
+				"w",
+				"WordPress: Switch Database"
+			],
+			[
+				"pain",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"packint",
+				"Package Control: Install Package"
+			],
+			[
+				"packinst",
+				"Package Control: Install Package"
+			],
+			[
+				"sfp",
+				"SFTP: Setup Server…"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"sft",
+				"SFTP: Show Panel"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"floo",
+				"Floobits - Join Workspace"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/projects/Portfolio/wp-content/themes/portfolio"
+	],
+	"file_history":
+	[
+		"/H/FLYJIN/Flyjin_FInal/page1.html",
+		"/C/Users/joel/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/C/Users/joel/Desktop/header.php",
+		"/C/Users/joel/Desktop/index.php",
+		"/C/Users/joel/Desktop/functions.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/projects/Portfolio/wp-content/themes/portfolio/functions.php",
+		"/C/Users/joel/AppData/Local/Temp/7zE1ABB.tmp/index.php",
+		"/C/Users/joel/Desktop/flyjin-wordpress/sftp-config.json",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/projects/Flyjin-fictitious-redesign/js/script.js",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/projects/Flyjin-fictitious-redesign/style.css",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/projects/Flyjin-fictitious-redesign/index.html",
+		"/C/Users/joel/Desktop/Portfolio/sass-flex-mixin-master/_flexbox.scss",
+		"/C/Users/joel/Desktop/feno-type/Bonbon/Desktop Fonts/webfontkit-20151006-161836/stylesheet.css",
+		"/C/Users/joel/Desktop/flyjin/style.css",
+		"/C/Users/joel/Desktop/flyjin/index.html",
+		"/H/cégep/Session_5_automne_2015/Beta Test/Semaine 5/Vendredi 12h-14h html - A15/js/common.js",
+		"/H/cégep/Session_5_automne_2015/Beta Test/Semaine 5/Vendredi 12h-14h html - A15/index_20150925_v7.html",
+		"/C/Users/joel/Desktop/flyjin/js/script.js",
+		"/C/Users/joel/Desktop/flyjin/js/breath.js",
+		"/C/Users/joel/Desktop/flyjin/menu.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/projects/wp-flyjin/wp-content/themes/twentyfifteen/functions.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/projects/wp-flyjin/wp-config.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/projects/wp-flyjin/wp-settings.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/projects/wp-flyjin/wp-admin/setup-config.php",
+		"/C/Users/joel/Desktop/flyjin/sftp-config.json",
+		"/C/Users/joel/AppData/Roaming/Sublime Text 3/Packages/Emmet/Default (Windows).sublime-keymap",
+		"/C/Users/joel/Desktop/boing.audio/content-loop.php",
+		"/C/Users/joel/Desktop/boing.audio/style.css",
+		"/C/Users/joel/Desktop/boing.audio/ajax.php",
+		"/C/Users/joel/Desktop/boing.audio/js/scripts.js",
+		"/C/Users/joel/Desktop/boing.audio/header.php",
+		"/C/Users/joel/Desktop/backup-fixed-nav.js",
+		"/C/Users/joel/Desktop/scss test/style.css",
+		"/C/Users/joel/Desktop/scss test/style.scss",
+		"/C/Users/joel/Desktop/scss test/style.css.map",
+		"/C/Users/joel/Desktop/boing.audio/functions.php",
+		"/C/Users/joel/Desktop/boing.audio/content-submenu.php",
+		"/C/Users/joel/Desktop/boing.audio/index.php",
+		"/C/Users/joel/Desktop/boing.audio/page.php",
+		"/C/Users/joel/Desktop/boing.audio/images/articleHeaderBg-blue.svg",
+		"/C/Users/joel/AppData/Roaming/Sublime Text 3/Packages/Autoprefixer/Autoprefixer.sublime-settings",
+		"/C/Users/joel/Desktop/boing.audio/searchform.php",
+		"/C/Users/joel/Desktop/superSystemeStatistiques/superSystemeStatistiques.php",
+		"/C/Users/joel/Desktop/kk-star-ratings/index.php",
+		"/C/Users/joel/Desktop/boing.audio/content-collapsable.php",
+		"/C/Users/joel/AppData/Roaming/Sublime Text 3/Packages/User/Autoprefixer.sublime-settings",
+		"/C/Users/joel/Desktop/boing.audio/images/login.svg",
+		"/C/Users/joel/Desktop/boing.audio/single.php",
+		"/C/Users/joel/Desktop/boing.audio/loop.php",
+		"/C/Users/joel/Desktop/boing.ca/js/scripts.js",
+		"/C/Users/joel/Desktop/boing.ca/style.css",
+		"/C/Users/joel/Desktop/boing.audio/images/jouer.svg",
+		"/C/Users/joel/Desktop/kk-star-ratings/js.js",
+		"/C/Users/joel/Desktop/boing.ca/functions.php",
+		"/C/Users/joel/Downloads/single.php",
+		"/C/Users/joel/Downloads/loop.php",
+		"/C/Users/joel/Desktop/boing.ca/index.php",
+		"/C/Users/joel/Desktop/kk-star-ratings/js.min.js",
+		"/C/Users/joel/AppData/Local/Temp/7zE54FB.tmp/js.js",
+		"/C/Users/joel/Desktop/boing.audio/sftp-config.json",
+		"/C/Users/joel/Desktop/boing.ca/images/stop.svg",
+		"/C/Users/joel/Desktop/jouer.svg",
+		"/C/Users/joel/Desktop/stop.svg",
+		"/C/Users/joel/Downloads/index.php",
+		"/C/Users/joel/Desktop/boing.ca/sftp-config.json",
+		"/C/Users/joel/AppData/Roaming/Sublime Text 3/Packages/User/sftp_servers/iel2-tp1",
+		"/C/Users/joel/Desktop/proxi-geotab/Qui sommes-nous - Proxi détaillant TELUS.html",
+		"/C/Users/joel/floobits/Olon/Boing.audio/sftp-config.json",
+		"/C/Users/joel/Downloads/jquery-2.1.4.min.js",
+		"/G/cégep/Session_4_hiver_2015/iel-2/11 - Responsive et finalisation LookShop/Fichiers exercice/html/style.css",
+		"/G/cégep/Session_3_automne_2014/Intégration en ligne - 1012/TP-Fin-session/alphonso_joel/index.html",
+		"/G/cégep/Session_3_automne_2014/Intégration en ligne - 1012/TP-Fin-session/alphonso_joel/css/style.css",
+		"/C/Users/joel/AppData/Roaming/Sublime Text 3/Packages/REM-PX/REM-PX.sublime-settings",
+		"/C/Users/joel/floobits/Olon/Boing.audio/index.html",
+		"/C/Users/joel/floobits/Olon/Boing.audio/style.css",
+		"/C/Users/joel/Desktop/08 - Intégration flexible/Fichiers exercice/html/fonts/webfont.css",
+		"/C/Users/joel/Desktop/08 - Intégration flexible/Fichiers exercice/html/style.css",
+		"/C/Users/joel/Desktop/08 - Intégration flexible/Fichiers exercice/html/index.html",
+		"/D/MyToolBoxProject/content-postlist.php",
+		"/D/MyToolBoxProject/archive-collection.php",
+		"/D/MyToolBoxProject/style.css",
+		"/D/MyToolBoxProject/single-collection.php",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Users/joel/Downloads/WiiYourselfUnity-master/README.md",
+		"/C/Users/joel/Desktop/index.html",
+		"/C/Program Files (x86)/Common Files/Adobe/CEP/extensions/Renderly/index.html",
+		"/C/Program Files (x86)/Common Files/Adobe/CEP/extensions/renderly/index.html",
+		"/D/MyToolBoxProject/footer.php",
+		"/D/MyToolBoxProject/header.php",
+		"/D/MyToolBoxProject/front-page.php",
+		"/D/MyToolBoxProject/content-hero.php",
+		"/D/MyToolBoxProject/functions.php",
+		"/D/MyToolBoxProject/index.js",
+		"/D/MyToolBoxProject/taxonomy-genre.php",
+		"/C/Users/joel/AppData/Roaming/Sublime Text 3/Packages/User/SFTP.sublime-settings",
+		"/D/MyToolBoxProject/img/plus.png",
+		"/D/MyToolBoxProject/img/slide-arrow.png",
+		"/I/cégep/Session_4_hiver_2015/iel-2/02 - MyToolBox/02 - documents de travail/img/plus.png",
+		"/D/MyToolBoxProject/options.php",
+		"/I/cégep/Session_4_hiver_2015/iel-2/02 - MyToolBox/02 - documents de travail/MyToolBox/index.html",
+		"/D/MyToolBoxProject/archive-site.php",
+		"/C/Users/joel/AppData/Roaming/Sublime Text 3/Packages/CSS3/CSS3.sublime-settings",
+		"/C/users/joel/appdata/local/temp/sublime-sftp-browse-1426033600/iel2-tp1/public_html/iel2-tp1/wp-content/themes/toolbox/header.php",
+		"/C/users/joel/appdata/local/temp/sublime-sftp-browse-1426034408/iel2-tp1/public_html/iel2-tp1/wp-content/themes/toolbox/style.css",
+		"/C/users/joel/appdata/local/temp/sublime-sftp-browse-1426083671/iel2-tp1/public_html/iel2-tp1/wp-content/themes/twentyfifteen/functions.php",
+		"/C/users/joel/appdata/local/temp/sublime-sftp-browse-1426081584/iel2-tp1/public_html/iel2-tp1/wp-content/themes/toolbox/functions.php",
+		"/C/users/joel/appdata/local/temp/sublime-sftp-browse-1426084938/iel2-tp1/public_html/iel2-tp1/wp-content/themes/toolbox/footer.php",
+		"/D/MyToolBoxProject/sftp-config.json",
+		"/D/MyToolBoxProject/MyToolBoxProject.sublime-project",
+		"/C/users/joel/appdata/local/temp/sublime-sftp-browse-1426087668/iel2-tp1/public_html/iel2-tp1/wp-content/themes/toolbox/index.js",
+		"/C/users/joel/appdata/local/temp/sublime-sftp-browse-1426093487/iel2-tp1/public_html/iel2-tp1/wp-content/themes/toolbox/archive-site.php",
+		"/C/users/joel/appdata/local/temp/sublime-sftp-browse-1426090447/iel2-tp1/public_html/iel2-tp1/wp-content/themes/toolbox/index.php",
+		"/C/users/joel/appdata/local/temp/sublime-sftp-browse-1426091862/iel2-tp1/public_html/iel2-tp1/wp-content/themes/toolbox/content-hero.php",
+		"/C/users/joel/appdata/local/temp/sublime-sftp-browse-1426033626/iel2-tp1/public_html/iel2-tp1/wp-content/themes/toolbox/front-page.php",
+		"/C/Users/joel/Desktop/MyToolBox/index.js",
+		"/C/Users/joel/Desktop/MyToolBox/web fonts/lane-narrow_regular_macroman/stylesheet.css",
+		"/C/Users/joel/Desktop/MyToolBox/style.css",
+		"/C/Users/joel/Desktop/MyToolBox/index.html",
+		"/C/Users/joel/Desktop/MyToolBox/reset.css",
+		"/C/Users/joel/AppData/Roaming/Sublime Text 3/Packages/User/sftp_servers/joeldesign",
+		"/C/users/joel/appdata/local/temp/sublime-sftp-browse-1424310119/joeldesign/apc2/index.js",
+		"/C/users/joel/appdata/local/temp/sublime-sftp-browse-1424303178/joeldesign/apc2/style.css",
+		"/C/users/joel/appdata/local/temp/sublime-sftp-browse-1424303365/joeldesign/apc2/index.html",
+		"/C/Users/joel/AppData/Roaming/Sublime Text 3/Packages/User/joeldesign",
+		"/C/Users/joel/AppData/Roaming/Sublime Text 3/Packages/SFTP/SFTP.sublime-settings",
+		"/C/Users/joel/.floorc.json",
+		"/C/Users/joel/AppData/Roaming/Sublime Text 3/Packages/User/View In Browser.sublime-settings",
+		"/C/Users/joel/AppData/Roaming/Sublime Text 3/Packages/View In Browser/View In Browser.sublime-settings"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 96.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"======= */",
+			"/*",
+			".bottom li",
+			"bottom",
+			"section",
+			"h3",
+			"Light",
+			"font-family:Georgia;",
+			"divan",
+			"p",
+			"bgGris",
+			"wrap",
+			"tag",
+			"taf",
+			"wrap",
+			"Jouer",
+			"hea",
+			"btn",
+			"100",
+			"50",
+			"0",
+			"name",
+			"200",
+			"125",
+			"5",
+			"100",
+			"50",
+			"transform",
+			"bouton",
+			"telech",
+			"aside",
+			"sound",
+			"-50%",
+			".preloader_1",
+			"1",
+			"width: 45px;",
+			"0.75",
+			"1",
+			"51",
+			"display",
+			"max",
+			"$",
+			"2",
+			"0.5s",
+			"0.3s",
+			"0.5s",
+			"0.6s",
+			"0.4s",
+			"0.6",
+			"0.7s",
+			"0.5s",
+			"rotate(180deg), translate3d(-50%, -50%, 0);",
+			"_kksr_ips",
+			"w",
+			"width",
+			"height",
+			" filter: blur(0);",
+			"-webkit-filter: blur(0);",
+			";",
+			");}",
+			"-1",
+			"translateZ(-1%) translateY(-50%) translateX(-50%)",
+			"ripple",
+			"0",
+			"255",
+			"jQuer",
+			"$",
+			"f00",
+			"input",
+			" \n",
+			";\n",
+			"#content > div > article img",
+			"#content > div article",
+			"<img src=\"images/camion-couleur.jpg\" alt=\"\">",
+			"articleTest",
+			"section#annonce>div.wrapper>img",
+			"nav",
+			"</div",
+			"plus",
+			"btn-plus",
+			"0",
+			"plus",
+			"20px",
+			"2%",
+			"10px",
+			"translateY",
+			"									",
+			"								",
+			"							",
+			"						",
+			"					",
+			"				",
+			"			",
+			"		",
+			"	",
+			"</section",
+			"<section"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23433,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "footer.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 42,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"incomplete_sync": null,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "header.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 342,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"incomplete_sync": null,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "functions.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4037,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22294,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "scss/style.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12114,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "scss/_flexbox.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11763,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3361,
+								3361
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1350.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "scss/mixins.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4836,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"default_dir": "C:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC11\\data\\localweb\\projects\\Portfolio\\wp-content\\themes\\portfolio",
+							"incomplete_sync": null,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CSS Extended Completions":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 202.0
+	},
+	"pinned_build_system": "",
+	"project": "portfolio.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"boing.audio\\header.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 229.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
