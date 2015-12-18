@@ -2,12 +2,16 @@
  * Created by joel on 31/10/2015.
  */
 
-// Wiggle Function
+(function($)
+{
 
-jQuery(document).ready(function ($) {
+$(document).ready(function ($) {
 
     // Handle smoothWheel
     enableScroll();
+
+    // Side Scroller initialisation
+    sideScrollerInit();
 
     // Handle smooth-scroll
     $('nav .cd-primary-nav a').smoothScroll({
@@ -67,7 +71,7 @@ jQuery(document).ready(function ($) {
 });
 
 function wiggle(selector) {
-    jQuery(selector).each(function () {
+    $(selector).each(function () {
         wiggleProp(this, 'scale', 0.85, 1);
         wiggleProp(this, 'rotation', -5, 5);
         wiggleProp(this, 'x', -10, 10);
@@ -92,13 +96,13 @@ function showImage($image) {
 
     disableScroll();
 
-    $href = jQuery($image).data('href');
+    $href = $($image).data('href');
 
-    jQuery('.overlay').addClass('visible').removeClass('hidden');
+    $('.overlay').addClass('visible').removeClass('hidden');
 
-    jQuery('.overlayContent').addClass('grow-off');
+    $('.overlayContent').addClass('grow-off');
 
-    jQuery('.overlayContent > .content').html('<img src="' + $href + '" alt="popup image"/>');
+    $('.overlayContent > .content').html('<img src="' + $href + '" alt="popup image"/>');
 
 }
 
@@ -106,13 +110,13 @@ function showVideo($image) {
 
     disableScroll();
 
-    $href = jQuery($image).data('href');
+    $href = $($image).data('href');
 
-    jQuery('.overlay').addClass('visible').removeClass('hidden');
+    $('.overlay').addClass('visible').removeClass('hidden');
 
-    jQuery('.overlayContent').removeClass('grow-off')
+    $('.overlayContent').removeClass('grow-off')
 
-    jQuery('.overlayContent > .content').html('<div class="embed-container"><iframe src="' + $href + '" frameborder="0" allowfullscreen></iframe></div>');
+    $('.overlayContent > .content').html('<div class="embed-container"><iframe src="' + $href + '" frameborder="0" allowfullscreen></iframe></div>');
 
 }
 
@@ -121,21 +125,97 @@ function hideOverlay() {
 
     enableScroll();
 
-    jQuery('.overlay').removeClass('visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
-        jQuery(this).addClass('hidden');
+    $('.overlay').removeClass('visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
+        $(this).addClass('hidden');
     });
 
-    jQuery('.overlayContent > .content').empty();
+    $('.overlayContent > .content').empty();
 
 }
 
 function disableScroll() {
-    jQuery(document).smoothWheel({remove: "true"});
-    jQuery('body').addClass('overflowhidden');
+    $(document).smoothWheel({remove: "true"});
+    $('body').addClass('overflowhidden');
 }
 
 function enableScroll() {
-    jQuery(document).smoothWheel();
-    jQuery('body').addClass('overflowhidden');
+    $(document).smoothWheel();
+    $('body').addClass('overflowhidden');
 }
 
+// Side Scroller Script
+
+function sideScrollerInit(){
+
+    // SideScroller Object
+    sideScroller = {
+        speed: 10,
+        velocity: 0
+    },
+    layers = [],
+    keys = [],
+    friction = 0.95;
+
+    // Get all layers in the table
+    $(".paraLayer").each(function(index) {
+        
+        var currentLayer = $(this);
+        var layerPos = currentLayer.position().left;
+        var layerSpeed = currentLayer.data('depth');
+
+        layers[index] = {
+            layer: currentLayer,
+            position: layerPos,
+            speed: layerSpeed
+        };
+    });
+
+    $(document).keydown(function(event) {
+        // Listen to key down and store data in keys
+        keys[event.keyCode] = true;
+    });
+
+    $(document).keyup(function(event) {
+        // Listen to key down and store data in keys
+        keys[event.keyCode] = false;
+    });
+
+    setInterval(updateFrame, 1000 / 60);
+
+}
+
+function updateFrame(){
+    
+    if(keys[39]){ 
+        // Right Arrow
+        if(sideScroller.velocity > -sideScroller.speed){
+            sideScroller.velocity--;
+        }
+    }
+    if(keys[37]){
+        // Left Arrow
+        if(sideScroller.velocity < sideScroller.speed){
+            sideScroller.velocity++;
+        }
+    }
+
+    // Apply resistance
+    sideScroller.velocity *= friction;
+
+    // Apply movement to each layers
+    $.each(layers, function(index, layer){
+        
+        //console.log(sideScroller.velocity);
+        // Update object data
+        layer.position += (sideScroller.velocity * layer.speed);
+
+        // The new position in pixels
+        var xPos = layer.position + "px";
+
+        // Apply transformation
+        layer.layer.css("transform", "translateX("+ xPos +")");
+
+    });
+}
+
+})(jQuery);

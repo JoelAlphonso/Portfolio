@@ -48,8 +48,8 @@
         
     </li>
     <li class="layer" data-depth="1">
-        <div class="row">
-            <div class="cell"></div>
+        <div class="paraLayerContainer">
+            <div class="paraLayer" data-depth="1"></div>
         </div>
     </li>
 </ul>
