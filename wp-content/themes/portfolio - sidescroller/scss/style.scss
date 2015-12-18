@@ -78,10 +78,82 @@ a.btnLight {
 Global Style
 -------------------------- */
 
+div.day-night{
+  position: relative;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  width: 100%;
+  height: 100%;
+  top: 20%;
+}
+
+.ciel{
+  width: 100vw;
+  height: 100vh;
+  background-color: #d9c72b;
+  opacity: 0.35;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cycleJour{
+  position: absolute;
+  width: 3000px;
+  height: 3000px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+div.jour{
+  @extend .cycleJour;
+  background: url("images/jour.png") center center no-repeat;
+}
+
+div.nuit{
+  @extend .cycleJour;
+  background: url("images/nuit.png") center center no-repeat;
+}
+
+
+
+
 .paraLayer{
   height: 100%;
-  width: 3000px;
-  background: url("images/sublime.png");
+  width: 10000px;
+  position: absolute;
+
+  background-position: center left;
+
+  &.sous-sol{
+    background-image: url("images/sous-sol.png");
+  }
+  &.sol{
+    background-image: url("images/sol.png");
+  }
+  &.horizon{
+    background-image: url("images/horizon.png");
+  }
+  &.mont-back{
+    background-image: url("images/mountain-back.png");
+  }
+  &.mont-middle{
+    background-image: url("images/mountain-middle.png");
+  }
+  &.mont-front{
+    background-image: url("images/mountain-front.png");
+  }
+  &.nuages-back{
+    background-image: url("images/clouds-back.png");
+  }
+  &.nuages-middle{
+    background-image: url("images/clouds-middle.png");
+  }
+  &.nuages-front{
+    background-image: url("images/clouds-front.png");
+  }
 }
 .layer{
   width: 100vw;
@@ -90,7 +162,8 @@ Global Style
   > div{
     width: 150vw;
     height: 150vh;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     position: relative;
@@ -189,10 +262,6 @@ header.cd-header, header.cd-header.is-visible, header.cd-header.is-fixed, header
 }
 
 .cd-logo > img {
-  -webkit-transition: opacity 0.5s;
-  -moz-transition: opacity 0.5s;
-  -ms-transition: opacity 0.5s;
-  -o-transition: opacity 0.5s;
   transition: opacity 0.5s;
   width: 40px;
 
@@ -245,11 +314,6 @@ overlay
   @include align-items(center);
   opacity: 0;
   @include flexbox;
-
-  -webkit-transition: opacity 0.3s;
-  -moz-transition: opacity 0.3s;
-  -ms-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
 
   > div.overlayOverflow {
@@ -309,10 +373,6 @@ overlay
     background-color: $light-bg;
     display: block;
     @include rotate(45);
-    -webkit-transition: height 0.3s, width 0.3s;
-    -moz-transition: height 0.3s, width 0.3s;
-    -ms-transition: height 0.3s, width 0.3s;
-    -o-transition: height 0.3s, width 0.3s;
     transition: height 0.3s, width 0.3s;
   }
 
@@ -397,9 +457,6 @@ div#fullpage > section:nth-child(1) {
       display: inline-block;
 
       -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
     }
 
@@ -408,9 +465,6 @@ div#fullpage > section:nth-child(1) {
       height: 125%;
 
       -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
 
       top: 50%;
@@ -441,9 +495,6 @@ div#fullpage > section:nth-child(1) {
     .symbol {
       position: absolute;
       -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
     }
 
@@ -493,7 +544,8 @@ div#fullpage > section:nth-child(2) {
     position: absolute;
     top: -15px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     max-width: 50%;
   }
 
@@ -525,7 +577,9 @@ div#fullpage > section:nth-child(2) {
   }
 
   div.presentation > .flexResponsiveRow {
-    justify-content: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
     span {
       @include breakpoint(small) {
@@ -578,9 +632,6 @@ div#fullpage > section:nth-child(3) {
       line-height: 1.5rem;
 
     }
-
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 
     @include breakpoint(medium) {
@@ -595,7 +646,9 @@ div#fullpage > section:nth-child(3) {
         @include flex-direction(row);
       }
       @include flex-direction(column);
-      justify-content: flex-start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
     }
 
     > .flexRow > div:first-of-type {
@@ -618,7 +671,9 @@ div#fullpage > section:nth-child(3) {
     }
 
     .compContainer {
-      flex: 0 0 auto;
+      -webkit-flex: 0 0 auto;
+          -ms-flex: 0 0 auto;
+              flex: 0 0 auto;
       @include flex-direction(column);
 
       //@include breakpoint(small) {
@@ -737,9 +792,6 @@ div#fullpage > section:nth-child(3) {
         top: 0;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
       }
 
@@ -850,7 +902,9 @@ div#fullpage > section:nth-child(4) {
       }
 
       > .flexRow > .flexCol:first-of-type {
-        flex: 0 0 80px;
+        -webkit-flex: 0 0 80px;
+            -ms-flex: 0 0 80px;
+                flex: 0 0 80px;
         @include align-items(flex-end);
 
         p {
@@ -946,7 +1000,6 @@ div#fullpage > section:nth-child(5) {
         @include font-size(36);
         -webkit-font-variant-ligatures: common-ligatures;
         font-variant-ligatures: common-ligatures;
-        -moz-font-feature-settings: "liga=1 clig=1";
         -ms-font-feature-settings: "liga", "clig";
         -webkit-font-feature-settings: "liga", "clig";
         font-feature-settings: "liga", "clig";
@@ -992,9 +1045,6 @@ div#fullpage > section:nth-child(6) {
     width: 100%;
 
     padding: 75px 0 75px 0;
-
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 
     @include breakpoint(small) {
@@ -1006,7 +1056,9 @@ div#fullpage > section:nth-child(6) {
         @include flex-direction(row);
       }
       @include flex-direction(column);
-      justify-content: flex-start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
     }
 
     > .flexRow > div:first-of-type {
